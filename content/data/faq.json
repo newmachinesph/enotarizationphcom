@@ -1,0 +1,286 @@
+{
+  "$comment": "Bilingual mega-FAQ. lang: 'en' | 'tl' marks the language of the QUESTION — people ask in the language they ask in, and the accordion badges 'tl'. Answers are spoken Taglish throughout, with English kept for legal terms of art. Set asOf on any time-sensitive answer. Feeds both the page and its FAQPage JSON-LD, so every answer must stand alone. Plain strings only: no markup, no RuleCite — cite Sections in words.",
+  "groups": [
+    {
+      "name": "Basics",
+      "items": [
+        {
+          "lang": "en",
+          "q": "What is electronic notarization?",
+          "a": "Notaryo ito kung saan electronic file ang dokumento, hindi papel. PDF o PDF/A ang porma. May commissioned Electronic Notary Public na magve-verify ng ID mo, manonood habang pumipirma ka kung kailangan, tapos lalagyan ang dokumento ng electronic notarial seal na may QR o bar code."
+        },
+        {
+          "lang": "tl",
+          "q": "Legit ba ang online notary sa Pilipinas?",
+          "a": "Legit kung sumusunod sa Rules on Electronic Notarization (A.M. No. 24-10-14-SC). Dalawa ang dapat totoo: may hiwalay na e-notary commission ang abogado, at Supreme Court-accredited ang ENF na gagamitin — nakasaad ito sa Rule VII, Sec. 1. Pero as of 6 Agosto 2026, walang inilathalang SC list ng accredited na ENF. Kaya mag-ingat sa sinumang nagsasabing accredited sila.",
+          "asOf": "2026-08-06"
+        },
+        {
+          "lang": "en",
+          "q": "Is an e-notarized document as valid as a traditional one?",
+          "a": "Oo. Pareho ang validity, force, at effect nito sa traditional notarization — Rule I, Sec. 5. Ang hiwalay na tanong ay kung tatanggapin ito ng partikular na opisina ngayon. Tanungin mo muna sila bago ka umasa."
+        },
+        {
+          "lang": "en",
+          "q": "What is the difference between IEN and REN?",
+          "a": "Sa IEN, magkaharap talaga kayo — walang gadget na namamagitan, pero electronic pa rin ang dokumento (Rule II, Sec. 1). Sa REN, live videoconference ang appearance at pwedeng magkaiba ang lokasyon ninyo (Rule III, Sec. 1). Dalawa lang ang mode. Pareho silang totoong pagharap."
+        },
+        {
+          "lang": "tl",
+          "q": "Kailan nagsimula ang bagong sistema?",
+          "a": "Marso 24, 2025. Iyon ang araw na naging epektibo ang Rules on Electronic Notarization. Inaprubahan ito noong 4 Pebrero 2025 at inilathala noong 9 Marso 2025 — 15 araw pagkatapos ng publication ang bisa, ayon sa Rule XII, Sec. 9."
+        },
+        {
+          "lang": "en",
+          "q": "Did this replace ordinary notarization?",
+          "a": "Hindi. Nananatili ang 2004 Rules on Notarial Practice para sa papel na may wet-ink na pirma — nakasaad iyan sa Rule I, Sec. 2. Ang natanggal ay ang 2020 interim rules sa remote notarization ng paper documents, na na-repeal ng Rule XII, Sec. 6."
+        },
+        {
+          "lang": "tl",
+          "q": "Lahat ba ng abogado pwedeng mag-e-notaryo?",
+          "a": "Hindi. Kailangan mo ng hiwalay na Electronic Notary Public commission. Iba ito sa traditional notarial commission — pwedeng isa lang ang hawak mo, pwede ring pareho, basta magkahiwalay ang commission (Rule XII, Sec. 5)."
+        },
+        {
+          "lang": "en",
+          "q": "Does an e-notary have to be in my city?",
+          "a": "Hindi. Kapag na-commission ka na bilang ENP, pwede mong pagsilbihan ang principal kahit saan sa Pilipinas — Rule VI, Sec. 9. Ito ang pinakamalaking pagbabago para sa taga-probinsya. Ang lumang territorial limits ay para pa rin sa traditional paper notarization."
+        }
+      ]
+    },
+    {
+      "name": "Cost",
+      "items": [
+        {
+          "lang": "tl",
+          "q": "Magkano magpa-notaryo?",
+          "a": "Nagkakaiba-iba, at walang opisyal na sagot. Sa nakikita namin, ang walk-in affidavit ay madalas ₱100–₱500 depende sa lungsod. Ang consular notarization sa Philippine post ay nasa US$25 kada dokumento. As of 6 Agosto 2026, wala pang inilalathalang fee guide ang Korte Suprema.",
+          "asOf": "2026-08-06"
+        },
+        {
+          "lang": "tl",
+          "q": "May bayad ba talaga ang magpa-notaryo?",
+          "a": "Karaniwan, oo. Pero pwedeng i-waive ng ENP ang bayad nang buo o bahagi, ayon sa Rule XII, Sec. 1. May PAO at ilang LGU rin na libre ang notarial services para sa kwalipikado."
+        },
+        {
+          "lang": "en",
+          "q": "Is there an official fee schedule for e-notarization?",
+          "a": "Wala pa. As of 6 Agosto 2026, walang inilathalang fee guide ang Korte Suprema. Ang sinasabi lang ng Rule XII, Sec. 1 ay susundin ang guide na ilalabas nila, at pwedeng singilin ang makatwirang telecom at incidental na gastos. Kaya ang anumang 'SC-approved fee table' na nakikita mo online ay walang basehan.",
+          "asOf": "2026-08-06"
+        },
+        {
+          "lang": "en",
+          "q": "Why can't you tell me the exact price for a deed of sale?",
+          "a": "Kasi madalas porsyento ng halaga ng property ang singil sa deed, hindi flat rate. Nag-iiba iyon kada notaryo. Hingin mo ang porsyento at kung saang halaga ito ipapatong — nakasulat, bago ka pumayag."
+        },
+        {
+          "lang": "en",
+          "q": "Is e-notarization cheaper than walking in?",
+          "a": "Madalas halos pareho ang mismong bayad. Ang tunay na tipid ay ang hindi mo nagastos: pamasahe, pila, at leave sa trabaho. Tingnan mo ang cost estimator namin para makita ang fee at ang effective cost."
+        },
+        {
+          "lang": "tl",
+          "q": "Binding ba ang IBP fee schedule?",
+          "a": "Hindi. Advisory lang iyon. Ang bawat notaryo ang nagtatakda ng sarili niyang presyo, at as of 6 Agosto 2026 wala pang fee guide na inilalabas ang Korte Suprema.",
+          "asOf": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "name": "OFW and abroad",
+      "items": [
+        {
+          "lang": "tl",
+          "q": "Nasa abroad ako — pwede ba akong mag-e-notaryo online?",
+          "a": "Hindi mula sa bahay mo. Bawal talaga. Ang tanging exception sa Rule IV, Sec. 5: nasa loob ka mismo ng Philippine embassy, consulate, o tanggapan ng Honorary Consul, magpa-pan ka ng camera, at may opisyal doon na magko-confirm na nandoon ka. Tanungin mo muna ang post mo kung offer nila ito, dahil hindi ito available sa lahat.",
+          "asOf": "2026-08-06"
+        },
+        {
+          "lang": "en",
+          "q": "Why is the location rule so strict?",
+          "a": "Kasi ang lokasyon ang nagpapa-verify sa buong akto. Bago mag-REN, kino-check ng ENP ang geolocation mo at tatanungin ka kung nasaan ka talaga (Rule III, Sec. 2(c)). Bawal ang VPN. Punishable act pala ang paggamit nito para pekein ang lokasyon — Rule XII, Sec. 3."
+        },
+        {
+          "lang": "tl",
+          "q": "Ano ang mga totoong option ko sa abroad?",
+          "a": "Tatlo ang praktikal. Consular notarization sa Philippine embassy o consulate, mga US$25 kada dokumento. Local notary sa kinaroroonan mo, tapos apostille. O mag-SPA ka para may umasikaso sa Pilipinas — pero kailangan pa rin munang ma-notaryo o ma-consularize ang SPA."
+        },
+        {
+          "lang": "en",
+          "q": "Do I need an apostille after consular notarization?",
+          "a": "Hindi. Ang dokumentong ni-notaryo sa Philippine post ay tanggap na para gamitin sa Pilipinas. Ang apostille chain ay para sa kabilang ruta — kapag foreign notary ang pumirma at kailangan pang i-certify ang akto niya."
+        },
+        {
+          "lang": "en",
+          "q": "Can a US online notary handle my Philippine document?",
+          "a": "Hindi. Ang mga US remote online notarization (RON) platform ay tumatakbo nang legal sa ilalim ng US state RON laws, pero hindi Philippine notarization ang labas nila. Hindi ito tanong ng tiwala sa kanila — ibang rehimen lang talaga. Dito sa atin, accredited ENF lang ang pwede — Rule VII, Sec. 1."
+        },
+        {
+          "lang": "tl",
+          "q": "May bayad ba ang embahada?",
+          "a": "Oo, mga US$25 kada dokumento, plus pamasahe mo papunta. Nag-iiba ito kada post. Tanungin mo muna sila."
+        },
+        {
+          "lang": "en",
+          "q": "Is REN from inside an embassy available everywhere?",
+          "a": "Hindi. Nag-iiba ang availability kada post, at pwedeng wala pa ito kung nasaan ka. Kontakin mo ang post bago ka pa maglakbay. Ituring mo itong itatanong, hindi pinaplanuhan.",
+          "asOf": "2026-08-06"
+        },
+        {
+          "lang": "tl",
+          "q": "Anong dapat nasa SPA ko?",
+          "a": "Buong pangalan mo at ng pinagkakatiwalaan mo. Tiyakin ang mga kapangyarihan, huwag basta 'lahat ng kinakailangan'. Ilagay mo rin ang petsa ng bisa, kasi maraming bangko ang ayaw tumanggap ng SPA na mahigit anim na buwan na."
+        }
+      ]
+    },
+    {
+      "name": "Documents",
+      "items": [
+        {
+          "lang": "en",
+          "q": "Which documents can be e-notarized?",
+          "a": "Electronic documents na PDF o PDF/A, kasama na ang scan ng papel — Rule I, Sec. 4(d). Hindi kasama ang notarial wills, deposition taking, at papel na may wet-ink na pirma. Nakalista iyan sa Rule I, Sec. 5."
+        },
+        {
+          "lang": "tl",
+          "q": "Pwede bang i-scan ko na lang ang papel?",
+          "a": "Oo, kung hindi pa ito naka-pirma — ang scanned na dokumento ay electronic document na rin sa ilalim ng Rule I, Sec. 4(d). Pero kung naka-pirma na ito sa tinta, mag-ingat ka: hayagang hindi saklaw ng Rules ang papel na may wet-ink na pirma (Rule I, Sec. 5), at inaasahang haharangin ito ng mga accredited na platform. Ang pinakamalinis na sagot ay gawin mong bagong PDF ang dokumento nang walang pirma. Sa jurat at sa signature witnessing, kailangan talagang live kang pumirma sa harap ng ENP."
+        },
+        {
+          "lang": "en",
+          "q": "What is the difference between a jurat and an acknowledgment?",
+          "a": "Sa jurat, ikaw mismo ang pipirma sa harap ng ENP gamit ang ENF, tapos manunumpa ka — Rule IV, Sec. 3. Sa acknowledgment, kinukumpirma mo lang na sa iyo ang pirma at kusa mong inilagay (Rule IV, Sec. 1(b)). Kaya sa acknowledgment, pwedeng naka-pirma na ang dokumento. Sa jurat, hindi."
+        },
+        {
+          "lang": "en",
+          "q": "Why can't a will be e-notarized?",
+          "a": "Dahil hayagang hindi saklaw ang notarial wills sa Rule I, Sec. 5. Mahigpit ang formalities sa wills, at may dahilan iyon. Traditional notarization ang ruta. Kumonsulta ka muna sa abogado."
+        },
+        {
+          "lang": "tl",
+          "q": "Nag-eexpire ba ang notarized document?",
+          "a": "Hindi nag-eexpire ang notarization mismo. Pero nag-eexpire ang commission ng notaryo — dalawang taon ito mula Enero 1 ng taong na-commission siya (Rule VI, Sec. 10). At maraming ahensya ang humihingi ng bago-bagong dokumento, kadalasan within six months. Tanungin mo muna sila."
+        },
+        {
+          "lang": "en",
+          "q": "I already signed it. Is that a problem?",
+          "a": "Sa jurat lang. Para sa acknowledgment o oath, ayos lang ang pre-signed na dokumento — tingnan ang Rule IV, Sec. 1(b) at Sec. 2(b). Kung hindi ka sigurado kung anong act ang kailangan mo, huwag munang pumirma. Pwede ka namang pumirma habang nasa session."
+        }
+      ]
+    },
+    {
+      "name": "The session",
+      "items": [
+        {
+          "lang": "en",
+          "q": "What ID do I need?",
+          "a": "Kahit isang valid na government-issued ID na may litrato AT pirma mo. Halimbawa: passport, driver's license, PhilID, UMID, PRC ID, postal ID, OFW o OWWA ID, seaman's book, PWD ID, senior citizen ID. Mas mahaba ang listahan kaysa sa akala ng marami — nasa Rule I, Sec. 4(b) ito. Isa lang, sapat na."
+        },
+        {
+          "lang": "tl",
+          "q": "Pwede bang isang account lang kaming lahat?",
+          "a": "Hindi. Sa REN, bawat kalahok ay may sariling ENF account — kahit mag-asawa pa kayo. Ganito mismo ang salita ng Rule IV, Sec. 1: \"using their respective ENF accounts\". Hiwalay kasing ineberipika ang bawat isa, at iyon mismo ang punto. Sa IEN, tanungin mo ang platform — pwedeng ganoon din ang hinihingi nila."
+        },
+        {
+          "lang": "en",
+          "q": "How fast does my internet need to be?",
+          "a": "Mga 2 mbps kada tao, at hindi bababa sa 1280x720 ang video — galing ito sa Rule VII, Sec. 2. Requirement iyan sa ENF. Dapat ka ring manatili sa loob ng camera frame buong session, ayon sa Rule III, Sec. 1."
+        },
+        {
+          "lang": "en",
+          "q": "Is the session recorded?",
+          "a": "Pwede. Karapatan mo ang recording — obligado ang ENF na payagan kang mag-record at mag-download para sa sarili mong record (Rule IV, Sec. 8). Bawal naman ang pre-recorded na video ng pagpirma. Kung gusto mo ng kopya, sabihin mo bago pa magsimula."
+        },
+        {
+          "lang": "en",
+          "q": "Can the e-notary refuse?",
+          "a": "Oo, at minsan kailangan talaga nilang tumanggi. Halimbawa: hindi ma-establish ang identity mo, mukhang may pumipilit sa iyo, o iregular ang dokumento. Ground pa nga sa revocation ang pag-notaryo kung may matibay silang dahilan para paniwalaang unlawful o immoral ang transaksyon (Rule XI, Sec. 3(a))."
+        },
+        {
+          "lang": "tl",
+          "q": "Gaano katagal ang proseso?",
+          "a": "Mga isang oras sa unang beses. Sa nakikita namin: 15–30 minuto para sa account setup at identity check, tapos 15–30 minuto para sa mismong session. Mas mabilis na sa susunod."
+        },
+        {
+          "lang": "en",
+          "q": "What happens after the session?",
+          "a": "Bago matapos ang session, pipirma ka rin nang electronic sa entry sa Electronic Notarial Book — hiwalay iyon sa pirma mo sa dokumento (Rule VIII, Sec. 4). Pagkatapos, ilalagay ng ENP ang sarili niyang electronic signature, ang electronic notarial certificate, at ang seal na may QR o bar code. Habang nasa transitional period, ipapadala ng ENP sa ENA ang certified copy ng buwanang entries sa unang 10 araw ng kasunod na buwan (Rule VIII, Sec. 3). I-download mo agad ang dokumento mo.",
+          "asOf": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "name": "Safety",
+      "items": [
+        {
+          "lang": "en",
+          "q": "How do I check whether a notary is legitimate?",
+          "a": "Hingin mo ang roll number niya. Para sa traditional notary, nasa opisina ng RTC Executive Judge at sa local IBP chapter ang record ng commission. May obligasyon ang Korte Suprema na i-post ang directory ng mga ENP at i-update ito tuwing Pebrero 15 at Agosto 15 (Rule V, Sec. 3). Pero as of 6 Agosto 2026, wala pa kaming nakikitang madaling pampublikong lookup.",
+          "asOf": "2026-08-06"
+        },
+        {
+          "lang": "tl",
+          "q": "Paano ko malalaman kung peke ang notaryo?",
+          "a": "Ilang red flag: hindi ka pinaharap kahit sa video, hindi tiningnan ang ID mo, pinapirma ka nang maaga para sa jurat, at ayaw magbigay ng pangalan o roll number. Sobrang mura rin, minsan. Kung ayaw sagutin ang tanong mo, sagot na iyon."
+        },
+        {
+          "lang": "en",
+          "q": "How can I verify a document I received?",
+          "a": "I-scan ang QR o bar code sa electronic notarial seal. Tingnan ang roll number. Hingin mo ang orihinal na PDF, hindi litrato ng screen. Pwede ka ring mag-inspect ng partikular na entry sa Electronic Notarial Book — kailangan may ID ka, pipirma ka sa hiwalay na entry, tutukuyin mo ang buwan, taon, uri ng dokumento at pangalan ng principal, at sasabihin mo ang layunin (Rule VIII, Sec. 5)."
+        },
+        {
+          "lang": "en",
+          "q": "Does notarization prove the contents are true?",
+          "a": "Hindi. Kung sino ang pumirma at humarap — iyon lang ang pinapatunayan nito. Ang notarized na dokumentong puno ng kasinungalingan ay puno pa rin ng kasinungalingan."
+        },
+        {
+          "lang": "tl",
+          "q": "Na-scam ako. Ano ang gagawin ko?",
+          "a": "Itigil mo agad ang paggamit ng dokumento. Itago mo lahat ng ebidensya — screenshot, resibo, chat thread. I-report mo sa NBI, at sa IBP kung may abogadong sangkot. Pwede ring kasuhan ang sinumang nagpanggap na ENP, hindi lang abogado (Rule XII, Sec. 3)."
+        },
+        {
+          "lang": "en",
+          "q": "Is using a VPN really a problem?",
+          "a": "Oo, seryoso. Obligado ang ENF na tuklasin at i-disable ang VPN (Rule VII, Sec. 2), at ang paggamit nito para baguhin ang lokasyon mo ay isa sa mga punishable acts sa Rule XII, Sec. 3. Patayin mo bago mag-session."
+        }
+      ]
+    },
+    {
+      "name": "For lawyers",
+      "items": [
+        {
+          "lang": "en",
+          "q": "How do I become an Electronic Notary Public?",
+          "a": "Apat ang qualification sa Rule VI, Sec. 1: Bar member in good standing na may OBC at IBP clearances, compliant sa MCLE at ULAS, isang taon nang residente sa Pilipinas na may regular place of work dito, at walang conviction sa crime involving moral turpitude. Kasama rin sa requirements ang certification mula sa ENF Provider na napanood mo ang instructional video nila (Rule VI, Sec. 2). Sa bayad, walang halagang nakasulat sa Rule VI, Sec. 7 — 'the fee prescribed by the Supreme Court' lang ang sabi, at as of 6 Agosto 2026 wala kaming na-source na inilathalang figure. Kumpirmahin mo sa portal.",
+          "asOf": "2026-08-06"
+        },
+        {
+          "lang": "en",
+          "q": "Do I need a traditional notarial commission first?",
+          "a": "Malamang hindi. Walang nakasaad sa apat na qualification sa Rule VI, Sec. 1 na kailangan mo munang maging traditional notary, at pwede mong hawakan pareho basta distinct at separate ang commissions (Rule XII, Sec. 5). Isang bagay lang ang nagpapaduda: sa Rule I, Sec. 4(l), ang ENP ay tinukoy bilang 'a notary public who is commissioned to perform electronic notarial acts'. Hindi ito nilinaw ng Rules. Kumpirmahin mo sa OBC-ENS bago ka maghanda ng papeles."
+        },
+        {
+          "lang": "en",
+          "q": "How long does the commission last?",
+          "a": "Dalawang taon, bilang mula Enero 1 ng taong na-commission ka — Rule VI, Sec. 10. Kahit Disyembre ka pa na-approve, ganoon pa rin ang bilang. Ang renewal ay isinasampa sa loob ng 30 araw bago mag-expire (Rule VI, Sec. 11). Kapag hindi, tanggal ka sa directory."
+        },
+        {
+          "lang": "en",
+          "q": "Can I use more than one platform?",
+          "a": "Oo — isang account sa bawat isa. Personal ang mga account at hindi ipinapahiram, kahit sa staff mo. Accredited ENF lang ang pwede mong gamitin (Rule VII, Sec. 1), at as of 6 Agosto 2026 wala pang inilathalang SC list ng accredited ENF.",
+          "asOf": "2026-08-06"
+        },
+        {
+          "lang": "en",
+          "q": "Can I notarize while I am abroad?",
+          "a": "Dapat nasa Pilipinas ka. Obligado ang ENF na pigilan kang mag-notaryo habang nasa labas ng bansa, liban sa limitadong extraterritorial na sitwasyon sa Rule IV, Sec. 5 (Rule VII, Sec. 2). Ang pag-notaryo habang hindi ka geolocated sa Pilipinas ay ground sa revocation ng commission mo — Rule XI, Sec. 3(a)."
+        },
+        {
+          "lang": "en",
+          "q": "What are my reporting duties right now?",
+          "a": "Habang nasa transitional period, buwanang report ka sa Electronic Notary Administrator: certified electronic copy ng Electronic Notarial Book na may entries ng buwan, plus kopya ng mga notarized na dokumento, sa unang 10 araw ng kasunod na buwan (Rule VIII, Sec. 3). Kahit walang entry, mag-report ka. As of 6 Agosto 2026, walang anunsyo na operational na ang Central Notarial Database.",
+          "asOf": "2026-08-06"
+        }
+      ]
+    }
+  ]
+}

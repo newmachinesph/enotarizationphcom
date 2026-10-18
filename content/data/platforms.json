@@ -1,0 +1,73 @@
+{
+  "$comment": "Maintained platform list. NEUTRALITY RULES: describe, never endorse. This site lists providers, it does not recommend them, it is affiliated with none of them, and it takes no payment. verification must be one of: official (named as an SC-accredited ENF provider in a primary Supreme Court document — as of 7 August 2026 the only such document is the SC's own ENP Application Form, ENP Form 1 (2026), which asks lawyer-applicants to select the SC-accredited ENF provider they are enrolled with and lists exactly three; a form is NOT a promulgated register, the SC has published no standalone list page, and its public directory of accredited facility providers still reads AVAILABLE SOON) | self-reported (claims it, and no source we have seen names it) | unverified | not-applicable. Being absent from that form is not evidence that a provider is not accredited — accreditation applications have been open since 9 December 2025 and are rolling, and accreditation can lapse or be revoked. It is a fact about a provider on a given date. No paid placement, ever. Philippine providers are ordered alphabetically, not by preference; the us-platforms row is kept last because it exists to explain an absence rather than to list a competitor.",
+  "lastChecked": "2026-08-07",
+  "platforms": [
+    {
+      "slug": "enotary-philippines",
+      "name": "eNotary Philippines",
+      "site": "enotary.ph",
+      "who": "General consumer and business documents",
+      "modes": "States it supports remote sessions",
+      "pricing": "Not published",
+      "verification": "self-reported",
+      "notes": "Not among the three ENF providers named in the Supreme Court's own ENP Application Form (ENP Form 1 (2026)), checked 7 August 2026. That absence is not proof it is unaccredited — it means we can point to no official document naming it. We have seen no pricing or accreditation evidence published. Ask for the Certificate of Accreditation before paying."
+    },
+    {
+      "slug": "notarialos",
+      "name": "NotarialOS",
+      "site": "notarialos.com",
+      "who": "Individuals wanting a published price",
+      "modes": "States it supports online notarization",
+      "pricing": "Publishes ₱488 per document, VAT inclusive",
+      "verification": "self-reported",
+      "notes": "Publishes a flat consumer price. It is not among the three ENF providers named in the Supreme Court's own ENP Application Form (ENP Form 1 (2026)), checked 7 August 2026 — and a published price is not evidence of accreditation. That absence is not proof it is unaccredited; it means we can point to no official document naming it. Ask for the Certificate of Accreditation before paying."
+    },
+    {
+      "slug": "quanby-legal",
+      "name": "QLegal (Quanby Legal)",
+      "site": "quanbylegal.com",
+      "who": "Individuals and businesses; markets round-the-clock online sessions",
+      "modes": "States it supports both remote (REN) and in-person (IEN) notarization",
+      "pricing": "Not published — advertises a free tier and enterprise pricing on request",
+      "verification": "official",
+      "notes": "Operated by Quanby Solutions, Inc. Listed as \"Qlegal (Quanby Solutions, Inc.)\" in the Supreme Court's official ENP Application Form (ENP Form 1 (2026)), one of exactly three SC-accredited ENF providers an applying lawyer may select. The source is an application form, not a promulgated register, and it carries no accreditation date — so we cannot tell you when it was accredited. Also named in PhilSTAR L!fe reporting of 5 August 2026. States it supports both remote and in-person sessions. No per-document consumer price is published; the site advertises a free subscription tier and custom enterprise pricing. Ask for the Certificate of Accreditation yourself before paying."
+    },
+    {
+      "slug": "twala",
+      "name": "Twala",
+      "site": "twala.ai/enotary",
+      "who": "Businesses and law offices; e-signature workflows",
+      "modes": "States it supports electronic notarization workflows",
+      "pricing": "Not published for consumers",
+      "verification": "official",
+      "notes": "Operated by Ohelio, Inc. Listed as \"Twala (Ohelio, Inc.)\" in the Supreme Court's official ENP Application Form (ENP Form 1 (2026)), one of exactly three SC-accredited ENF providers an applying lawyer may select. The source is an application form, not a promulgated register, and it carries no accreditation date. Also named in PhilSTAR L!fe reporting of 5 August 2026. A partnership with the Integrated Bar of the Philippines was announced through PR channels in January 2026 — a bar-association partnership is not accreditation and is not an endorsement by the IBP or the Court. Ask for the Certificate of Accreditation yourself before paying."
+    },
+    {
+      "slug": "unawa-notarizeit",
+      "name": "UNAWA NotarizeIT",
+      "site": "notarizeit.ph",
+      "who": "Businesses, law firms, enterprise document flows",
+      "modes": "States it supports remote electronic notarization",
+      "pricing": "Not published for consumers",
+      "verification": "official",
+      "notes": "Operated by UNAWA, Inc. Listed as \"NotarizeIT (UNAWA, Inc.)\" in the Supreme Court's official ENP Application Form (ENP Form 1 (2026)), one of exactly three SC-accredited ENF providers an applying lawyer may select. The source is an application form, not a promulgated register, and it carries no accreditation date. Also named in PhilSTAR L!fe reporting of 5 August 2026. Its own site stated on 7 August 2026 that it is still completing Supreme Court registrations for commissioned notaries before opening document notarization to the general public — so being accredited does not mean you can use it today. Ask for the Certificate of Accreditation yourself before paying."
+    },
+    {
+      "slug": "us-platforms",
+      "name": "Notarize.com, DocuSign Notary and other US platforms",
+      "site": "—",
+      "who": "United States documents only",
+      "modes": "US Remote Online Notarization (RON)",
+      "pricing": "Priced in USD",
+      "verification": "not-applicable",
+      "notes": "Included so nobody is misled. These platforms operate under US state RON laws. They are not Philippine electronic notarization and their output is not a Philippine notarized document."
+    }
+  ],
+  "howToChoose": [
+    "Ask the platform to show you its Certificate of Accreditation from the Supreme Court, and check the name against reporting you can date and attribute. Accreditation is a fact about a provider on a given date, not a permanent property — re-check it yourself rather than relying on any list, including this one.",
+    "Ask whether the e-notary who will handle your document holds an Electronic Notary Public commission, and ask for their roll number.",
+    "Ask what the total price is, including VAT and any per-signatory charges, before you upload anything.",
+    "Check that the platform requires each signatory to create their own account. A platform happy to let several people share one login is not following the Rules.",
+    "Walk away from any platform that offers to notarize while you are sitting at home abroad. Under the Rules that is not allowed, and a platform that offers it is telling you something important about itself."
+  ]
+}

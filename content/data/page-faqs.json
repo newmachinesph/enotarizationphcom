@@ -1,0 +1,121 @@
+{
+  "$comment": "Per-page FAQs, keyed by the page URL. The catch-all content route renders these under a 'Common questions' heading after the page body. Kept here rather than inside the .mdx files because MDX drops expression attributes, and because a data file is easier for a non-developer to edit. lang: 'en' | 'tl' marks the language of the QUESTION — the accordion badges 'tl' as Filipino. Answers are spoken Taglish. 'a' is a PLAIN STRING rendered as one <p> and also emitted as FAQPage JSON-LD: no markdown, no components, no newlines, and Sections cited in words.",
+  "/learn/what-is-e-notarization": [
+    {
+      "lang": "tl",
+      "q": "Legit ba ang online notary sa Pilipinas?",
+      "a": "Legit, basta sumusunod sa Rules on Electronic Notarization. Dalawa ang dapat totoo: may hiwalay na e-notary commission ang abogado, at Supreme Court-accredited ang ENF na ginagamit (Rule VII, Sec. 1). Pero as of 6 Agosto 2026, walang inilathalang SC list ng accredited na ENF. Kaya mag-ingat sa sinumang nagsasabing accredited sila."
+    },
+    {
+      "lang": "tl",
+      "q": "Kailangan ko pa bang humarap sa tao?",
+      "a": "Oo. Ang video call ay pagharap din — live, synchronous, at nasa camera frame ka buong session (Rule III, Sec. 1). Ang hindi pwede ay ipadala mo lang ang dokumento at wala kang haharapin. Bawal din ang pre-recorded na video ng pagpirma."
+    },
+    {
+      "lang": "tl",
+      "q": "Naka-pirma na ang dokumento ko. Problema ba iyon?",
+      "a": "Depende sa act. Kung acknowledgment o oath, ayos lang ang pre-signed (Rule IV, Sec. 1(b) at Sec. 2(b)). Kung jurat, hindi — doon ka mismo pipirma sa harap ng ENP gamit ang ENF (Rule IV, Sec. 3). Kaya kung hindi ka sigurado, huwag munang pumirma."
+    },
+    {
+      "lang": "tl",
+      "q": "Nag-eexpire ba ang notarized document?",
+      "a": "Hindi nag-eexpire ang notarization. Nag-eexpire naman ang commission ng notaryo — dalawang taon ito mula Enero 1 ng taong na-commission siya (Rule VI, Sec. 10). At maraming ahensya ang humihingi ng bago-bagong dokumento, kadalasan within six months. Tanungin mo muna sila."
+    },
+    {
+      "lang": "tl",
+      "q": "Paano ko malalaman kung totoo ang e-notary?",
+      "a": "Hingin mo ang roll number niya. Nakasulat din iyan sa electronic notarial seal, kasama ang pangalan niya at ang QR o bar code (Rule I, Sec. 4(h)). May obligasyon ang Korte Suprema na mag-post ng directory ng mga ENP at i-update ito tuwing Pebrero 15 at Agosto 15 (Rule V, Sec. 3)."
+    },
+    {
+      "lang": "en",
+      "q": "Is it cheaper than a walk-in notary?",
+      "a": "Minsan lang. Kadalasan halos pareho ang bayad, at as of 6 Agosto 2026 wala pang inilalathalang fee guide ang Korte Suprema. Ang tunay na tipid ay ang hindi mo nagastos: pamasahe, pila, at kalahating araw na leave."
+    }
+  ],
+  "/guides/first-e-notarization": [
+    {
+      "lang": "tl",
+      "q": "Kailangan ko pa bang lumabas ng bahay?",
+      "a": "Kung REN, hindi — video call lang, basta nasa Pilipinas kayong lahat (Rule III, Sec. 2(c)); at pwede kang pagsilbihan ng e-notary kahit saan sa Pilipinas (Rule VI, Sec. 9). Kung IEN, oo, magkaharap talaga kayo nang walang gadget na namamagitan (Rule II, Sec. 1). PDF pa rin ang dokumento sa dalawa."
+    },
+    {
+      "lang": "tl",
+      "q": "Pwede bang isang account lang kaming mag-asawa?",
+      "a": "Hindi. Sa REN, bawat tao ay may sariling ENF account — ganito ang salita ng Rule IV, Sec. 1: \"using their respective ENF accounts\". Hiwalay kasing ineberipika ang identity ng bawat isa, at iyon ang buong punto ng sistema. Sa IEN, tanungin mo ang platform — pwedeng ganoon din ang hinihingi nila."
+    },
+    {
+      "lang": "en",
+      "q": "What if my internet cuts out mid-session?",
+      "a": "Hihinto ang session. Kailangan ng tuloy-tuloy at synchronous na videoconference sa ilalim ng Rule III, Sec. 1, kaya hindi ito pwedeng magpatuloy nang wala ka. Mag-reconnect ka, o mag-reschedule. Gamitin mo ang pinaka-stable mong koneksyon, kasi 2 mbps kada tao ang minimum (Rule VII, Sec. 2)."
+    },
+    {
+      "lang": "en",
+      "q": "Can the e-notary refuse me?",
+      "a": "Oo, at minsan kailangan talaga. Halimbawa: hindi ma-establish ang identity mo, mukhang may pumipilit sa iyo, o iregular ang dokumento. Ground pa nga sa revocation ang pag-notaryo kung may matibay silang dahilan para paniwalaang unlawful o immoral ang transaksyon (Rule XI, Sec. 3(a))."
+    },
+    {
+      "lang": "tl",
+      "q": "Tatanggapin ba ito ng bangko o ng LTO?",
+      "a": "Legally, pareho ang bigat nito sa traditional notarization (Rule I, Sec. 5). Sa praktika, iba. As of 6 Agosto 2026, walang anunsyo ang karamihan ng ahensya kung tumatanggap na sila. Tanungin mo muna ang tanggapan bago ka umasa."
+    }
+  ],
+  "/guides/ofw": [
+    {
+      "lang": "tl",
+      "q": "Nasa Dubai ako. Pwede ba akong mag-video call sa notaryo sa Pilipinas?",
+      "a": "Hindi, kung nasa apartment mo. Bawal talaga. Ang tanging exception sa Rule IV, Sec. 5: nasa loob ka mismo ng Philippine embassy, consulate, o tanggapan ng Honorary Consul, magpa-pan ka pa ng camera, at may opisyal doon na magko-confirm na nandoon ka. Tanungin mo muna ang post mo kung offer nila ito, dahil hindi ito available sa lahat."
+    },
+    {
+      "lang": "tl",
+      "q": "Magkano ang consular notarization?",
+      "a": "Humigit-kumulang US$25 kada dokumento, plus pamasahe mo papunta. Nag-iiba ito kada post. Tanungin mo muna sila."
+    },
+    {
+      "lang": "en",
+      "q": "Do I need an apostille after consular notarization?",
+      "a": "Hindi. Ang dokumentong ni-notaryo sa Philippine post ay tanggap na para gamitin sa Pilipinas. Ang apostille chain ay para sa kabilang ruta — kapag foreign notary ang pumirma at kailangan pang i-certify ang akto niya."
+    },
+    {
+      "lang": "tl",
+      "q": "Nakalimutan kong pumirma. Pwede na bang i-scan at i-send?",
+      "a": "Kung hindi mo pa napipirmahan, mabuti — gawin mo na lang PDF at pumirma sa session. Kung naka-pirma na sa tinta, hindi iyon simpleng scan-and-send: hayagang hindi saklaw ng Rules ang papel na may wet-ink na pirma (Rule I, Sec. 5), kahit na-scan mo pa. Tanungin mo muna ang platform. Sa jurat, kailangan talagang live kang pumirma sa harap ng ENP (Rule IV, Sec. 3); ganoon din sa signature witnessing (Rule IV, Sec. 4). Kaya huwag munang pirmahan."
+    },
+    {
+      "lang": "en",
+      "q": "Can my spouse sign for me?",
+      "a": "Kung may SPA ka, oo. Tiyak dapat ang mga kapangyarihang ibinibigay mo, hindi basta 'lahat ng kinakailangan'. Kailangan ding ma-notaryo o ma-consularize mismo ang SPA bago ito magamit. Kaya ang SPA ang unang dokumentong dapat mong ayusin."
+    },
+    {
+      "lang": "tl",
+      "q": "Ilang araw bago matapos?",
+      "a": "Madalas same day ang notarization sa embahada. Ang matagal ay ang appointment at ang padala pauwi. Mag-allow ka ng dalawa hanggang apat na linggo end-to-end."
+    }
+  ],
+  "/for-lawyers": [
+    {
+      "lang": "en",
+      "q": "Do I need a traditional notarial commission first?",
+      "a": "Malamang hindi. Wala sa apat na qualification sa Rule VI, Sec. 1 ang dating traditional notarial commission, at pwede mong hawakan pareho basta distinct at separate ang commissions (Rule XII, Sec. 5). Isang bagay lang ang nagpapaduda: sa Rule I, Sec. 4(l), ang ENP ay tinukoy bilang 'a notary public who is commissioned to perform electronic notarial acts'. Hindi ito nilinaw ng Rules — kumpirmahin mo sa OBC-ENS bago ka maghanda ng papeles."
+    },
+    {
+      "lang": "en",
+      "q": "Can I register with more than one platform?",
+      "a": "Oo — isang account sa bawat isa. Personal ang account at hindi ipinapahiram, kahit sa staff mo. Accredited ENF lang ang pwede mong gamitin (Rule VII, Sec. 1), at as of 6 Agosto 2026 wala pang inilathalang SC list ng accredited ENF."
+    },
+    {
+      "lang": "en",
+      "q": "Can I notarize while abroad, even for a client in the Philippines?",
+      "a": "Dapat nasa Pilipinas ka. Obligado ang ENF na pigilan kang mag-notaryo habang nasa labas ng bansa, liban sa limitadong extraterritorial na sitwasyon sa Rule IV, Sec. 5 (Rule VII, Sec. 2). Ang pag-notaryo habang hindi ka geolocated sa Pilipinas ay ground sa revocation ng commission mo — Rule XI, Sec. 3(a)."
+    },
+    {
+      "lang": "en",
+      "q": "Can I refuse to notarize?",
+      "a": "Oo. At sa ilang sitwasyon, kailangan mo talaga. Halimbawa: hindi ma-establish ang identity, hindi kusa ang principal, o iregular ang dokumento. Ground pa nga sa revocation ang pag-notaryo kung may matibay kang dahilan para paniwalaang unlawful o immoral ang transaksyon (Rule XI, Sec. 3(a))."
+    },
+    {
+      "lang": "en",
+      "q": "Does the client have to be in my city?",
+      "a": "Hindi. Iyan ang reporma. Kapag na-commission ka na, pwede mong pagsilbihan ang principal kahit saan sa Pilipinas — Rule VI, Sec. 9."
+    }
+  ]
+}

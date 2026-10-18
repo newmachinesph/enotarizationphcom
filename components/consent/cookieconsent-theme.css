@@ -1,0 +1,317 @@
+/* ==========================================================================
+   vanilla-cookieconsent — skinned to "The Record"
+
+   This file deliberately does NOT live in app/globals.css. It is loaded by
+   components/consent/CookieConsent.tsx, immediately after the library's own
+   stylesheet, so the whole consent surface travels as one unit.
+
+   How the override works
+   ----------------------
+   The library declares its ~45 custom properties on `:root` (specificity
+   0-1-0) and consumes them inside `#cc-main`. Re-declaring them on `#cc-main`
+   (specificity 1-0-0) therefore wins regardless of source order — this file
+   does not depend on the bundler emitting it after cookieconsent.css.
+
+   One value cannot be inherited and must be restated: the library defines
+   `--cc-link-color: var(--cc-btn-primary-bg)`. Custom-property substitution
+   happens on the element that *declares* the property, so that var() resolves
+   against :root's primary bg, not ours. It is set explicitly below.
+
+   Colours are literal hex rather than var(--paper-50) etc. The widget mounts
+   at the end of <body> and the tokens would in fact reach it, but a consent
+   banner must render correctly even if the token layer fails to load — it is
+   the one component whose job is to appear before the user trusts the page.
+   Every pair below is drawn from the ratios asserted by
+   `npm run check:contrast`; the load-bearing one is navy-900 on brass-300 at
+   10.07:1 for the primary button.
+   ========================================================================== */
+
+#cc-main {
+  /* --- Type -------------------------------------------------------------- */
+  --cc-font-family: var(--font-instrument-sans), system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  /* --- Geometry ---------------------------------------------------------- */
+  /* Square by design — a record has edges. The toggle keeps its pill, because
+     a switch that reads as a box reads as a checkbox. */
+  --cc-btn-border-radius: 0;
+  --cc-modal-border-radius: 0;
+  --cc-modal-transition-duration: 0.24s;
+
+  /* --- Surfaces and text ------------------------------------------------- */
+  --cc-bg: #fbfaf6; /* paper-50 */
+  --cc-primary-color: #10182b; /* ink — 16.93:1 on paper-50 */
+  --cc-secondary-color: #3a4e7c; /* muted — 7.85:1 */
+  --cc-link-color: #1b4a8f; /* civic-600 — 8.30:1 */
+
+  /* --- Primary action: brass ---------------------------------------------- */
+  --cc-btn-primary-bg: #d9b978; /* brass-300 */
+  --cc-btn-primary-color: #0a1020; /* seal navy — 10.07:1, verified */
+  --cc-btn-primary-border-color: #745022; /* brass-700 hairline */
+  --cc-btn-primary-hover-bg: #e8d3a8; /* brass-200 — lighter, so contrast rises */
+  --cc-btn-primary-hover-color: #0a1020;
+  --cc-btn-primary-hover-border-color: #745022;
+
+  /* --- Secondary action: outlined on paper -------------------------------- */
+  --cc-btn-secondary-bg: #fbfaf6;
+  --cc-btn-secondary-color: #10182b;
+  --cc-btn-secondary-border-color: #7d7460; /* paper-500 — 4.43:1 boundary */
+  --cc-btn-secondary-hover-bg: #ede9de;
+  --cc-btn-secondary-hover-color: #10182b;
+  --cc-btn-secondary-hover-border-color: #10182b;
+
+  /* --- Rules -------------------------------------------------------------- */
+  --cc-separator-border-color: #dfd8c8;
+  --cc-section-category-border: #dfd8c8;
+  --cc-cookie-category-block-bg: #f6f3ec;
+  --cc-cookie-category-block-border: #dfd8c8;
+  --cc-cookie-category-block-hover-bg: #ede9de;
+  --cc-cookie-category-block-hover-border: #7d7460;
+  --cc-cookie-category-expanded-block-bg: #ede9de;
+  --cc-cookie-category-expanded-block-hover-bg: #ede9de;
+
+  /* --- Toggles ------------------------------------------------------------ */
+  --cc-toggle-on-bg: #745022; /* brass-700 — 6.75:1, the only brass safe here */
+  --cc-toggle-on-knob-bg: #fbfaf6;
+  --cc-toggle-enabled-icon-color: #745022;
+  --cc-toggle-off-bg: #7d7460;
+  --cc-toggle-off-knob-bg: #fbfaf6;
+  --cc-toggle-disabled-icon-color: #7d7460;
+  --cc-toggle-readonly-bg: #dfd8c8;
+  --cc-toggle-readonly-knob-bg: #fbfaf6;
+  --cc-toggle-readonly-knob-icon-color: #7d7460;
+
+  /* --- Chrome -------------------------------------------------------------- */
+  --cc-overlay-bg: rgba(10, 16, 32, 0.72);
+  --cc-footer-bg: #f6f3ec;
+  --cc-footer-color: #3a4e7c;
+  --cc-footer-border-color: #dfd8c8;
+  --cc-webkit-scrollbar-bg: #dfd8c8;
+  --cc-webkit-scrollbar-hover-bg: #c6bda8;
+}
+
+/* --------------------------------------------------------------------------
+   Night edition.
+   Same contract as globals.css: prefers-color-scheme by default, [data-theme]
+   wins in both directions. The :not([data-theme="light"]) guard is what lets
+   an explicit light choice survive a dark OS.
+   -------------------------------------------------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) #cc-main {
+    --cc-bg: #10182b; /* navy-800 surface */
+    --cc-primary-color: #eff2f8; /* 15.77:1 */
+    --cc-secondary-color: #b8c5df; /* 10.18:1 */
+    --cc-link-color: #8fa9d6; /* civic-300 — 7.42:1 */
+
+    --cc-btn-primary-bg: #d9b978;
+    --cc-btn-primary-color: #0a1020; /* 10.07:1, same verified pair */
+    --cc-btn-primary-border-color: #d9b978;
+    --cc-btn-primary-hover-bg: #e8d3a8;
+    --cc-btn-primary-hover-color: #0a1020;
+    --cc-btn-primary-hover-border-color: #e8d3a8;
+
+    --cc-btn-secondary-bg: #10182b;
+    --cc-btn-secondary-color: #eff2f8;
+    --cc-btn-secondary-border-color: #5c71a0; /* navy-400 — 3.64:1 boundary */
+    --cc-btn-secondary-hover-bg: #1a2848;
+    --cc-btn-secondary-hover-color: #eff2f8;
+    --cc-btn-secondary-hover-border-color: #8b9cc4;
+
+    --cc-separator-border-color: #1a2848;
+    --cc-section-category-border: #1a2848;
+    --cc-cookie-category-block-bg: #0a1020;
+    --cc-cookie-category-block-border: #1a2848;
+    --cc-cookie-category-block-hover-bg: #1a2848;
+    --cc-cookie-category-block-hover-border: #5c71a0;
+    --cc-cookie-category-expanded-block-bg: #060a15;
+    --cc-cookie-category-expanded-block-hover-bg: #060a15;
+
+    --cc-toggle-on-bg: #d9b978;
+    --cc-toggle-on-knob-bg: #0a1020;
+    --cc-toggle-enabled-icon-color: #d9b978;
+    --cc-toggle-off-bg: #5c71a0;
+    --cc-toggle-off-knob-bg: #eff2f8;
+    --cc-toggle-disabled-icon-color: #3a4e7c;
+    --cc-toggle-readonly-bg: #1a2848;
+    --cc-toggle-readonly-knob-bg: #8b9cc4;
+    --cc-toggle-readonly-knob-icon-color: #0a1020;
+
+    --cc-overlay-bg: rgba(6, 10, 21, 0.8);
+    --cc-footer-bg: #0a1020;
+    --cc-footer-color: #b8c5df;
+    --cc-footer-border-color: #1a2848;
+    --cc-webkit-scrollbar-bg: #1a2848;
+    --cc-webkit-scrollbar-hover-bg: #26375f;
+  }
+}
+
+:root[data-theme="dark"] #cc-main {
+  --cc-bg: #10182b;
+  --cc-primary-color: #eff2f8;
+  --cc-secondary-color: #b8c5df;
+  --cc-link-color: #8fa9d6;
+
+  --cc-btn-primary-bg: #d9b978;
+  --cc-btn-primary-color: #0a1020;
+  --cc-btn-primary-border-color: #d9b978;
+  --cc-btn-primary-hover-bg: #e8d3a8;
+  --cc-btn-primary-hover-color: #0a1020;
+  --cc-btn-primary-hover-border-color: #e8d3a8;
+
+  --cc-btn-secondary-bg: #10182b;
+  --cc-btn-secondary-color: #eff2f8;
+  --cc-btn-secondary-border-color: #5c71a0;
+  --cc-btn-secondary-hover-bg: #1a2848;
+  --cc-btn-secondary-hover-color: #eff2f8;
+  --cc-btn-secondary-hover-border-color: #8b9cc4;
+
+  --cc-separator-border-color: #1a2848;
+  --cc-section-category-border: #1a2848;
+  --cc-cookie-category-block-bg: #0a1020;
+  --cc-cookie-category-block-border: #1a2848;
+  --cc-cookie-category-block-hover-bg: #1a2848;
+  --cc-cookie-category-block-hover-border: #5c71a0;
+  --cc-cookie-category-expanded-block-bg: #060a15;
+  --cc-cookie-category-expanded-block-hover-bg: #060a15;
+
+  --cc-toggle-on-bg: #d9b978;
+  --cc-toggle-on-knob-bg: #0a1020;
+  --cc-toggle-enabled-icon-color: #d9b978;
+  --cc-toggle-off-bg: #5c71a0;
+  --cc-toggle-off-knob-bg: #eff2f8;
+  --cc-toggle-disabled-icon-color: #3a4e7c;
+  --cc-toggle-readonly-bg: #1a2848;
+  --cc-toggle-readonly-knob-bg: #8b9cc4;
+  --cc-toggle-readonly-knob-icon-color: #0a1020;
+
+  --cc-overlay-bg: rgba(6, 10, 21, 0.8);
+  --cc-footer-bg: #0a1020;
+  --cc-footer-color: #b8c5df;
+  --cc-footer-border-color: #1a2848;
+  --cc-webkit-scrollbar-bg: #1a2848;
+  --cc-webkit-scrollbar-hover-bg: #26375f;
+}
+
+/* ==========================================================================
+   Structure the custom properties cannot reach.
+   Rules, not shadows. A brass rule marks the head of the notice exactly as it
+   marks every section head on the site.
+   ========================================================================== */
+
+#cc-main .cm,
+#cc-main .pm {
+  border: 1px solid var(--cc-separator-border-color);
+  border-top: 3px solid #b8873a; /* brass-500 — the accent */
+  box-shadow: none;
+}
+
+#cc-main .cm__title,
+#cc-main .pm__title {
+  font-family: var(--font-instrument-serif), "Times New Roman", Georgia, serif;
+  /* Instrument Serif ships weight 400 ONLY. Anything heavier is synthesised
+     and smears the high-contrast strokes; size carries the emphasis. */
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.14;
+  letter-spacing: -0.016em;
+}
+
+#cc-main .pm__section-title,
+#cc-main .pm__service-title {
+  font-weight: 500;
+}
+
+/* The service/cookie table reads as a ledger, like every other table here. */
+#cc-main .pm__table th {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#cc-main .cm__btn,
+#cc-main .pm__btn {
+  letter-spacing: 0.01em;
+}
+
+/* Focus is visible, consistent and never removed — same ring as the site.
+   The library sets `outline: revert` on its controls, so this restates it. */
+#cc-main :focus-visible {
+  outline: 3px solid #1b4a8f;
+  outline-offset: 2px;
+  border-radius: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) #cc-main :focus-visible {
+    outline-color: #8fa9d6;
+  }
+}
+
+:root[data-theme="dark"] #cc-main :focus-visible {
+  outline-color: #8fa9d6;
+}
+
+/* The consent notice is additive motion like everything else: it must be fully
+   usable with the transition switched off. */
+@media (prefers-reduced-motion: reduce) {
+  #cc-main {
+    --cc-modal-transition-duration: 0.01ms;
+  }
+}
+
+/* ==========================================================================
+   The in-page "Cookie preferences" control.
+
+   The library binds any element carrying data-cc="show-preferencesModal" when
+   it initialises, which is how the control inside content/pages/privacy.mdx
+   reaches the dialog without the MDX knowing this component exists.
+
+   It is styled here rather than at the call site because MDX in this pipeline
+   drops JSX *expression* attributes, so no style object can be passed, and a
+   bare <button> otherwise inherits the article face and reads as body copy —
+   a control nobody can see is not a way to withdraw consent.
+
+   Unlike the widget above, this one lives on the page, so it reads the SITE
+   tokens and follows the theme for free. The hex values are fallbacks only.
+   Anything the library renders is inside #cc-main and outranks this on
+   specificity, so its own buttons are untouched.
+   ========================================================================== */
+
+button[data-cc="show-preferencesModal"] {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-instrument-sans), system-ui, -apple-system, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  padding: 0.6rem 1rem;
+  color: var(--text, #10182b);
+  background: var(--surface, #fbfaf6);
+  /* border-strong, not border: this outline is the sole indicator of the
+     control's edge, so WCAG 1.4.11 wants 3:1 and paper-300 would not clear it. */
+  border: 1px solid var(--border-strong, #7d7460);
+  border-radius: 0;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    background-color var(--dur-fast, 120ms) var(--ease-standard, ease),
+    border-color var(--dur-fast, 120ms) var(--ease-standard, ease),
+    transform var(--dur-fast, 120ms) var(--ease-standard, ease);
+}
+
+button[data-cc="show-preferencesModal"]:hover {
+  background: var(--surface-sunken, #ede9de);
+  border-color: var(--text, #10182b);
+}
+
+button[data-cc="show-preferencesModal"]:active {
+  transform: scale(0.985);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button[data-cc="show-preferencesModal"]:active {
+    transform: none;
+  }
+}

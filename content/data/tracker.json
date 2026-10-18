@@ -1,0 +1,121 @@
+{
+  "$comment": "Rollout changelog. Newest first. To add an entry, copy a block and edit it. category: rules | accreditation | commissioning | enforcement | acceptance | market",
+  "entries": [
+    {
+      "date": "2026-08-10",
+      "category": "commissioning",
+      "headline": "Applications for an Electronic Notary Public commission open",
+      "detail": "The Supreme Court's eNotarization page states: \"Applications for the Commissioning of ENP will open on August 10, 2026. The eNotarization Portal will also be available for access on this date.\" This is the first day a lawyer can apply. Until now the Rules had been in force for roughly seventeen months with no route to apply at all. A commission does not issue on the day you file: the process still runs through posting of notice, a virtual summary hearing, an opposition window, and action by the Electronic Notary Services office. Note the sequencing trap — a lawyer must already be enrolled with an accredited Electronic Notarization Facility provider before applying, because the form requires an Electronic Facility Provider Certification.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/enotarization/"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "commissioning",
+      "headline": "Still nobody you can book: the directory is built but empty",
+      "detail": "The Supreme Court's public directory page now carries four categories — commissioned Electronic Notaries Public, applicants for a commission, accredited facility providers, and applicants for accreditation. All four are placeholders reading AVAILABLE SOON, with dead links, and the block is hidden on desktop, tablet and mobile. Same on the Commissioned ENPs page and the Notices of Virtual Summary Hearing page. Putting that together with the 10 August application opening, and with accredited provider NotarizeIT stating on its own site the same day that it is completing Supreme Court registrations before opening notarization to the general public, our reading is that no Electronic Notary Public has been commissioned yet and the service is not usable by the public. That is our inference, not a Supreme Court statement — the Court has published no count and no announcement either way.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/enotarization/general-public/"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "accreditation",
+      "headline": "An official Supreme Court document names three ENF providers — in a form, not a list",
+      "detail": "The Supreme Court's ENP Application Form, ENP Form 1 (2026), asks applying lawyers to \"select the SC-Accredited ENF Provider/s where you are enrolled\" and offers exactly three checkboxes: Twala (Ohelio, Inc.), Qlegal (Quanby Solutions, Inc.) and NotarizeIT (UNAWA, Inc.). This is the first primary Supreme Court source naming them, and it replaces our earlier position that only news reporting named them. Read it carefully: a form is not a promulgated register. It carries no accreditation dates, the Court's own list of accredited facility providers still reads AVAILABLE SOON, and accreditation applications have been open and rolling since 9 December 2025. Ask any provider for its Certificate of Accreditation rather than relying on this, or on us.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/wp-content/uploads/2026/08/ENS-ENP-Application-Form-080726-fillable-pdf.pdf"
+    },
+    {
+      "date": "2026-08-06",
+      "category": "accreditation",
+      "headline": "Still no published fee schedule, and no ENP directory",
+      "detail": "We checked again today. The Supreme Court has not published the guide on notarial fees that Rule XII, Sec. 1 anticipates, so nobody can tell you a lawful price for e-notarization. The directory of Electronic Notaries Public that Rule V, Sec. 3 requires — updated every 15 February and 15 August — is still not public. Fee tables circulating on legal-content sites and attributed to \"Supreme Court-approved schedules\" have no such schedule behind them.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/enotary-services/"
+    },
+    {
+      "date": "2026-08-06",
+      "category": "commissioning",
+      "headline": "ENP application form posted; commissioning process being stood up",
+      "detail": "The application form for lawyers seeking an Electronic Notary Public commission has been posted. The Supreme Court's \"List of Commissioned ENPs\" page still reads AVAILABLE SOON, so there is still no public directory of e-notaries.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/enotary-services/"
+    },
+    {
+      "date": "2026-08-05",
+      "category": "accreditation",
+      "headline": "National reporting names three accredited e-notarization platforms",
+      "detail": "PhilSTAR L!fe named three Electronic Notarization Facility providers as accredited: Ohelio, Inc.'s Twala, Quanby Solutions, Inc.'s QLegal, and UNAWA, Inc.'s NotarizeIT. The article cites no Supreme Court list — the naming is the reporter's. It was corroborated two days later by the Court's own ENP application form. Note what still does not exist: no issuance, press release or report gives a date on which any provider was accredited, so we cannot tell you when. A public directory of individual commissioned e-notaries is also still unavailable.",
+      "sourceUrl": "https://philstarlife.com/amp/article/113380-how-to-get-documents-e-notarized"
+    },
+    {
+      "date": "2026-04-01",
+      "category": "enforcement",
+      "headline": "NBI arrests five over fake notarization using a stolen seal",
+      "detail": "The National Bureau of Investigation arrested five people in Manila for fake notarization using a stolen notarial seal. It is a reminder that notarization fraud is prosecuted — and that a seal alone proves nothing.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/enotarization/"
+    },
+    {
+      "date": "2026-01-15",
+      "category": "market",
+      "headline": "Twala announces a partnership with the Integrated Bar of the Philippines",
+      "detail": "Provider Twala announced an IBP partnership in January 2026. A partnership with a bar association is not the same thing as Supreme Court accreditation, and at that point no accredited-provider list had been published. Twala was later among the three platforms accredited in August 2026.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/enotary-services/"
+    },
+    {
+      "date": "2025-12-09",
+      "category": "accreditation",
+      "headline": "Accreditation opens for Electronic Notarization Facility providers",
+      "detail": "The Supreme Court opened applications for ENF provider accreditation through a portal on its website. Under the companion Guidelines: a ₱5,000 application fee via JePS, then a ₱100,000 cash performance bond deposited with the Supreme Court Cashier in a Land Bank fiduciary account within 5 days of the Notice of Approval — the Certificate of Accreditation is withheld until the bond is posted. Accreditation runs three years; renewal is ₱5,000, filed 30 days before expiry. None of these are figures a member of the public pays — they are what a platform pays. No fee has been published for what an electronic notarial act will cost you.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/enotarization/"
+    },
+    {
+      "date": "2025-03-24",
+      "category": "rules",
+      "headline": "The Rules on Electronic Notarization take effect",
+      "detail": "A.M. No. 24-10-14-SC became effective. It supplements the 2004 Rules on Notarial Practice and repeals the 2020 Interim Rules on Remote Notarization of Paper Documents (A.M. No. 20-07-04-SC).",
+      "sourceUrl": "https://sc.judiciary.gov.ph/wp-content/uploads/2025/03/A.M.-No.-24-10-14-SC-Feb.-4-2025-published-3.9.25.pdf"
+    },
+    {
+      "date": "2025-03-09",
+      "category": "rules",
+      "headline": "Rules published; Supreme Court announces approval",
+      "detail": "The Rules were published on 9 March 2025, together with the Guidelines on the Accreditation of Electronic Notarization Facility Providers. Both were approved En Banc on 4 February 2025.",
+      "sourceUrl": "https://sc.judiciary.gov.ph/enotarization/"
+    }
+  ],
+  "$comment2": "Agency acceptance matrix. status: announced | silent | case-by-case. Every 'silent' row means we found NO official announcement — not that the agency refuses.",
+  "acceptance": [
+    {
+      "agency": "Land Transportation Office (LTO)",
+      "useCase": "Deeds of sale for vehicles, affidavits of loss",
+      "status": "silent",
+      "note": "No public announcement on accepting e-notarized documents as of the date above."
+    },
+    {
+      "agency": "Registry of Deeds / LRA",
+      "useCase": "Deeds of sale for land, extrajudicial settlements",
+      "status": "silent",
+      "note": "No public announcement. Land registration carries extra formalities — ask the specific registry first."
+    },
+    {
+      "agency": "Banks (private)",
+      "useCase": "SPAs, board resolutions, secretary's certificates",
+      "status": "case-by-case",
+      "note": "Acceptance is set by each bank's internal policy, not by a regulator. Ask your branch before you pay for anything."
+    },
+    {
+      "agency": "SSS",
+      "useCase": "Affidavits, SPAs for claims",
+      "status": "silent",
+      "note": "No public announcement."
+    },
+    {
+      "agency": "Pag-IBIG (HDMF)",
+      "useCase": "SPAs, affidavits for housing loans",
+      "status": "silent",
+      "note": "No public announcement."
+    },
+    {
+      "agency": "DFA",
+      "useCase": "Supporting documents for passport and apostille services",
+      "status": "silent",
+      "note": "No public announcement. Apostille rules are separate from notarization rules."
+    }
+  ]
+}

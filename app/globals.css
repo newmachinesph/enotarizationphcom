@@ -1,0 +1,870 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   eNotarizationPH — "The Record"
+   Court Navy: bone paper, midnight ink, antique brass.
+
+   The site presents as a public record of a legal change, not a product.
+   Every value below serves that: paper not white, rules not shadows,
+   squared corners not soft ones.
+
+   Every foreground/background pair here is asserted by
+   `npm run check:contrast` (49 pairs, both editions). Do not add a colour
+   pair without adding its assertion — the palette is not eyeballed.
+
+   Mirror of content/data/tokens.json — keep both in sync.
+   ========================================================================== */
+
+:root {
+  /* --- Paper (warm neutral — the page is bone, never white) ------------- */
+  --paper-50: #fbfaf6;
+  --paper-100: #f6f3ec; /* page background */
+  --paper-200: #ede9de;
+  --paper-300: #dfd8c8; /* decorative hairline */
+  --paper-400: #c6bda8;
+  /* Control boundaries ONLY — 4.17:1 on paper. WCAG 1.4.11 wants 3:1 for a
+     border that is the sole indicator of a control's edge (inputs, outlined
+     buttons). Decorative rules are exempt and use --paper-300. */
+  --paper-500: #7d7460;
+
+  /* --- Navy (ink and structure) ---------------------------------------- */
+  --navy-50: #eff2f8;
+  --navy-100: #dbe2f0;
+  --navy-200: #b8c5df;
+  --navy-300: #8b9cc4;
+  --navy-400: #5c71a0; /* night control boundary — 3.90:1 on night bg */
+  --navy-500: #3a4e7c; /* muted text — 7.40:1 on paper */
+  --navy-600: #26375f;
+  --navy-700: #1a2848;
+  --navy-800: #10182b; /* INK — 15.96:1 on paper */
+  --navy-900: #0a1020; /* seal navy, inverse surface, night background */
+  --navy-950: #060a15;
+
+  /* --- Brass (the accent) ----------------------------------------------- */
+  /* brass-300 is the accent ON NAVY. brass-700 is the only brass safe for
+     text on paper. Nothing between them carries text on a light surface. */
+  --brass-50: #fbf7ef;
+  --brass-100: #f4ead4;
+  --brass-200: #e8d3a8;
+  --brass-300: #d9b978; /* signature accent on navy — 10.07:1 */
+  --brass-400: #c99e4e;
+  --brass-500: #b8873a; /* the accent */
+  --brass-600: #96692b;
+  --brass-700: #745022; /* 6.50:1 on paper — safe for text */
+  --brass-800: #573c1d;
+  --brass-900: #3f2c17;
+
+  /* --- Civic blue (links only — the one flag cue retained) --------------- */
+  --civic-300: #8fa9d6;
+  --civic-600: #1b4a8f;
+
+  /* --- Semantic (deliberately unclaimed by the brand) ------------------- */
+  --success: #16643f;
+  --success-soft: #e7f3ec;
+  --warning: #8a5200;
+  --warning-soft: #fbf1e0;
+  --danger: #a32017;
+  --danger-soft: #fbebe9;
+  --info: var(--civic-600);
+  --info-soft: #e9eef8;
+
+  /* --- Surfaces & text --------------------------------------------------- */
+  --bg: var(--paper-100);
+  --surface: var(--paper-50);
+  --surface-sunken: var(--paper-200);
+  --surface-inverse: var(--navy-900);
+  --border: var(--paper-300);
+  --border-strong: var(--paper-500);
+  --text: var(--navy-800);
+  --text-muted: var(--navy-500);
+  --text-inverse: var(--navy-50);
+  --text-inverse-muted: var(--navy-200);
+  --accent: var(--brass-500);
+  --accent-text: var(--brass-700);
+  --accent-on-inverse: var(--brass-300);
+  --link: var(--civic-600);
+  --focus-ring: var(--civic-600);
+
+  /* --- Elevation --------------------------------------------------------- */
+  /* A record sits on paper; it does not float. Shadows are almost absent by
+     design — structure comes from rules and space, not from lift. */
+  --shadow-sm: 0 1px 0 rgba(16, 24, 43, 0.06);
+  --shadow-md: 0 1px 0 rgba(16, 24, 43, 0.08), 0 6px 18px rgba(16, 24, 43, 0.05);
+  --shadow-lg: 0 1px 0 rgba(16, 24, 43, 0.1), 0 18px 40px rgba(16, 24, 43, 0.08);
+
+  /* --- Radius ------------------------------------------------------------ */
+  /* Square by design — a record has edges. Cards, buttons, inputs, callouts
+     and banners all read from these. Deliberately NOT squared: status chips
+     and the seal, because a pill reads as a label and a circle reads as a
+     mark. */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+
+  /* --- Rules ------------------------------------------------------------- */
+  --rule-hair: 1px;
+  --rule-brass: 3px;
+
+  /* --- Motion ------------------------------------------------------------ */
+  /* Critically damped is the house default; bounce only after a real gesture. */
+  --ease-standard: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-standard-reverse: cubic-bezier(1, 0, 0.68, 0.28);
+  --dur-fast: 120ms;
+  --dur-base: 240ms;
+  --dur-slow: 400ms;
+  --dur-draw: 1200ms;
+}
+
+/* --------------------------------------------------------------------------
+   Night edition
+   prefers-color-scheme by default, [data-theme] wins in both directions.
+   -------------------------------------------------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: var(--navy-900);
+    --surface: var(--navy-800);
+    --surface-sunken: var(--navy-950);
+    --surface-inverse: var(--paper-100);
+    --border: var(--navy-700);
+    --border-strong: var(--navy-400);
+    --text: var(--navy-50);
+    --text-muted: var(--navy-200);
+    --text-inverse: var(--navy-800);
+    --text-inverse-muted: var(--navy-600);
+    --accent: var(--brass-300);
+    --accent-text: var(--brass-300);
+    --accent-on-inverse: var(--brass-700);
+    --link: var(--civic-300);
+    --focus-ring: var(--civic-300);
+    --info: var(--civic-300);
+    --info-soft: #142244;
+    --success: #5fce9b;
+    --success-soft: #0b2a1e;
+    --warning: #efb65e;
+    --warning-soft: #2c1f09;
+    --danger: #f0938b;
+    --danger-soft: #2c1210;
+    --shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 1px 0 rgba(0, 0, 0, 0.5), 0 6px 18px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 1px 0 rgba(0, 0, 0, 0.6), 0 18px 40px rgba(0, 0, 0, 0.5);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: var(--navy-900);
+  --surface: var(--navy-800);
+  --surface-sunken: var(--navy-950);
+  --surface-inverse: var(--paper-100);
+  --border: var(--navy-700);
+  --border-strong: var(--navy-400);
+  --text: var(--navy-50);
+  --text-muted: var(--navy-200);
+  --text-inverse: var(--navy-800);
+  --text-inverse-muted: var(--navy-600);
+  --accent: var(--brass-300);
+  --accent-text: var(--brass-300);
+  --accent-on-inverse: var(--brass-700);
+  --link: var(--civic-300);
+  --focus-ring: var(--civic-300);
+  --info: var(--civic-300);
+  --info-soft: #142244;
+  --success: #5fce9b;
+  --success-soft: #0b2a1e;
+  --warning: #efb65e;
+  --warning-soft: #2c1f09;
+  --danger: #f0938b;
+  --danger-soft: #2c1210;
+  --shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 1px 0 rgba(0, 0, 0, 0.5), 0 6px 18px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 1px 0 rgba(0, 0, 0, 0.6), 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   The `dark:` variant.
+
+   Tailwind 4 ships `dark:` as bare `@media (prefers-color-scheme: dark)`, which
+   ignores the [data-theme] attribute this site toggles. Every `dark:` utility
+   was therefore dead whenever a reader used the theme switch — it only tracked
+   the OS. This redefinition mirrors the token cascade above exactly: the media
+   query applies unless [data-theme="light"] opts out, and [data-theme="dark"]
+   wins outright.
+
+   Prefer semantic tokens (bg-surface, text-muted, border-line) over `dark:`
+   anyway — they invert on their own. This variant is the safety net, not the
+   pattern.
+   -------------------------------------------------------------------------- */
+
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme="light"]) *) {
+      @slot;
+    }
+  }
+
+  &:where(:root[data-theme="dark"] *) {
+    @slot;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tailwind theme bridge
+   -------------------------------------------------------------------------- */
+
+@theme inline {
+  --color-paper-50: var(--paper-50);
+  --color-paper-100: var(--paper-100);
+  --color-paper-200: var(--paper-200);
+  --color-paper-300: var(--paper-300);
+  --color-paper-400: var(--paper-400);
+  --color-paper-500: var(--paper-500);
+
+  --color-navy-50: var(--navy-50);
+  --color-navy-100: var(--navy-100);
+  --color-navy-200: var(--navy-200);
+  --color-navy-300: var(--navy-300);
+  --color-navy-400: var(--navy-400);
+  --color-navy-500: var(--navy-500);
+  --color-navy-600: var(--navy-600);
+  --color-navy-700: var(--navy-700);
+  --color-navy-800: var(--navy-800);
+  --color-navy-900: var(--navy-900);
+  --color-navy-950: var(--navy-950);
+
+  --color-brass-50: var(--brass-50);
+  --color-brass-100: var(--brass-100);
+  --color-brass-200: var(--brass-200);
+  --color-brass-300: var(--brass-300);
+  --color-brass-400: var(--brass-400);
+  --color-brass-500: var(--brass-500);
+  --color-brass-600: var(--brass-600);
+  --color-brass-700: var(--brass-700);
+  --color-brass-800: var(--brass-800);
+  --color-brass-900: var(--brass-900);
+
+  --color-civic-300: var(--civic-300);
+  --color-civic-600: var(--civic-600);
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-sunken: var(--surface-sunken);
+  --color-inverse: var(--surface-inverse);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-ink: var(--text);
+  --color-muted: var(--text-muted);
+  --color-on-inverse: var(--text-inverse);
+  --color-on-inverse-muted: var(--text-inverse-muted);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+  --color-accent-on-inverse: var(--accent-on-inverse);
+  --color-link: var(--link);
+
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+
+  --font-display: var(--font-instrument-serif), "Times New Roman", Georgia, serif;
+  --font-article: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-instrument-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+}
+
+/* ==========================================================================
+   Base
+   ==========================================================================
+   Everything below lives inside @layer base ON PURPOSE.
+
+   Tailwind puts its utilities in @layer utilities. Unlayered CSS beats ALL
+   layered CSS no matter the specificity — so an unlayered `a { color: … }`
+   silently overrides `text-white` on a link. Layer order (theme, base,
+   components, utilities) is what keeps utilities winning. Do not move these
+   rules out of the layer.
+   ========================================================================== */
+
+@layer base {
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* Anchor links must not hide under the sticky header. */
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-instrument-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* 17px base, not 16. This site is read by people working out a legal process
+     on a phone, often in a second language, sometimes on a cheap screen — and
+     Instrument Sans runs small for its size. Leading is set for Taglish, which
+     mixes long Filipino compounds with English legal terms and so wraps more
+     unevenly than either language alone. */
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-synthesis-weight: none;
+}
+
+/* Display type.
+
+   Instrument Serif ships WEIGHT 400 ONLY — Google Fonts silently clamps a 700
+   request back to 400. Asking for 600/700 here would make the browser
+   synthesise a fake bold and smear the high-contrast strokes, so the weight is
+   pinned at 400 and size does the work. `font-synthesis-weight: none` on body
+   is the belt to this braces. */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-instrument-serif), "Times New Roman", Georgia, serif;
+  font-weight: 400;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+/* Display sizes pulled back from the first cut (h1 topped out at 5.5rem, h2 at
+   3.25rem). At those sizes a headline stopped being a signpost and became an
+   obstacle: on a laptop a long Taglish h1 ate most of the first screen and
+   pushed the actual answer below the fold. These still read as broadsheet
+   display type, but a reader now sees the heading AND the paragraph it
+   introduces at the same time, which is the whole job of a heading. */
+h1 {
+  font-size: clamp(2.25rem, 1.7rem + 2.6vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 1.42rem + 1.4vw, 2.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(1.3125rem, 1.2rem + 0.55vw, 1.625rem);
+  line-height: 1.24;
+  letter-spacing: -0.012em;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Small text gets slightly POSITIVE tracking for legibility. Raised from
+   0.8125rem — this class carries source notes and caveats, which are exactly
+   the sentences a reader must not skip on a legal-information page. */
+.text-fine {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 0.006em;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.07em;
+}
+
+/* Focus: visible, consistent, never removed. */
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 0;
+}
+
+::selection {
+  background: var(--brass-200);
+  color: var(--navy-900);
+}
+
+} /* end @layer base */
+
+/* ==========================================================================
+   Components — custom classes, layered so utilities can still override them.
+   ========================================================================== */
+
+@layer components {
+
+/* Container caps at Tailwind's 2xl breakpoint (96rem / 1536px). */
+.shell {
+  width: 100%;
+  max-width: 96rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .shell {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .shell {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* The broadsheet grid — the structural signature.
+
+   A narrow marginalia rail carries the section number, the date and the
+   citations; the text column keeps a 46rem measure regardless of viewport.
+   Below lg the rail contents inline above the text, in source order, so the
+   reading sequence is identical with or without the grid. */
+.broadsheet {
+  display: grid;
+  grid-template-columns:
+    [rail-start] minmax(0, 1fr)
+    [rail-end text-start] minmax(0, 46rem)
+    [text-end wide-start] minmax(0, 1fr) [wide-end];
+  column-gap: 2.5rem;
+}
+
+/* Desktop placement first, the single-column collapse after.
+
+   ORDER MATTERS AND IS NOT COSMETIC. `.broadsheet-rail` and the mobile
+   override have identical specificity (0,1,0), so whichever is written last
+   wins. With the media query above these rules, `justify-self: end` leaked
+   into the phone layout and pinned every ledger numeral and dateline to the
+   right edge in a ~36px column, which is exactly what the rail must not do
+   once it is stacked above the text. Keep the collapse last. */
+.broadsheet-rail {
+  grid-column: rail-start / rail-end;
+  justify-self: end;
+  text-align: right;
+}
+
+.broadsheet-text {
+  grid-column: text-start / text-end;
+}
+
+.broadsheet-wide {
+  grid-column: text-start / wide-end;
+}
+
+.broadsheet-full {
+  grid-column: rail-start / wide-end;
+}
+
+/* The collapse. Written AFTER every placement rule above so it actually wins —
+   see the note on .broadsheet-rail. Below lg the grid becomes one column and
+   the rail stacks above its text, left-aligned and full width, so numerals and
+   datelines read as labels rather than as a stranded right-hand gutter. */
+@media (max-width: 1023px) {
+  .broadsheet {
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
+  }
+
+  .broadsheet > * {
+    grid-column: 1 / -1;
+  }
+
+  .broadsheet-rail {
+    justify-self: stretch;
+    text-align: left;
+  }
+}
+
+/* The reading column stays narrow on purpose — measure, not width, is what
+   makes long legal copy readable. */
+.prose-shell {
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+/* --- The Brass Rule ------------------------------------------------------
+   Promoted from decoration to structure: this is the ledger hairline that
+   marks every section head and dateline. It extends on scroll-enter. */
+.brass-rule {
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    var(--brass-400) 42%,
+    transparent 100%
+  );
+  height: var(--rule-brass);
+  transform-origin: left center;
+}
+
+/* A plain hairline for dividing content. Decorative — exempt from 1.4.11. */
+.hair-rule {
+  height: var(--rule-hair);
+  background: var(--border);
+}
+
+/* --- Ledger numerals ------------------------------------------------------ */
+.ledger-num {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.14em;
+  color: var(--accent-text);
+  text-transform: uppercase;
+}
+
+/* --- The Dateline --------------------------------------------------------- */
+/* Uppercase mono at 11px with 0.16em tracking looked right and read badly —
+   all-caps removes the word-shape cue readers rely on, and wide tracking on
+   top of that turns a label into a puzzle. Bigger, tighter, and no longer the
+   lightest thing on the page. */
+.dateline {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Article prose -------------------------------------------------------- */
+/* Long legal copy sets in Newsreader, not the UI sans. Optical size follows
+   the type size — that is the whole reason for a variable text face here. */
+.article {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-size: 1.1875rem;
+  /* 1.7, up from 1.62. Long statutory sentences at a 46rem measure need the
+     extra leading for the eye to find the next line reliably. */
+  line-height: 1.7;
+  font-variation-settings: "opsz" 16;
+}
+
+/* The lede was set in --text-muted, so the first sentence of every page — the
+   one carrying the actual answer — was the faintest text on it. It is ink now;
+   the size difference already marks it as an introduction. */
+.lede {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-size: clamp(1.1875rem, 1.1rem + 0.4vw, 1.375rem);
+  line-height: 1.55;
+  font-variation-settings: "opsz" 28;
+  color: var(--text);
+  text-wrap: pretty;
+}
+
+/* Parked off-screen by transform, not by a percentage offset — a `top: -100%`
+   resolves against the initial containing block and can leave the pill
+   visible partway down a long page. */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 100;
+  background: var(--navy-900);
+  color: var(--paper-50);
+  padding: 0.75rem 1rem;
+  transform: translateY(calc(-100% - 1.5rem));
+  transition: transform var(--dur-fast) var(--ease-standard);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Translucent chrome — content scrolls underneath, not behind an opaque strip. */
+.chrome-blur {
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+}
+
+/* Press feedback lands on pointer-DOWN, instantly. */
+.pressable {
+  transition:
+    transform var(--dur-fast) var(--ease-standard),
+    background-color var(--dur-fast) var(--ease-standard),
+    border-color var(--dur-fast) var(--ease-standard),
+    color var(--dur-fast) var(--ease-standard);
+  touch-action: manipulation;
+}
+
+.pressable:active {
+  transform: scale(0.985);
+}
+
+/* --- MDX prose defaults --------------------------------------------------- */
+/* Reading rhythm.
+
+   Every value here is bigger than the first cut. Dense legal prose does not
+   need to be *packed* to feel serious — it needs air, so a reader can find
+   where one idea stops and the next begins without re-reading. Headings now
+   sit much closer to the text they introduce than to the text above them,
+   which is what makes a page scannable. */
+.mdx > * + * {
+  margin-top: 1.3em;
+}
+
+.mdx h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 0.35em;
+  padding-top: 0.25rem;
+}
+
+.mdx h3 {
+  margin-top: 2.6rem;
+  margin-bottom: 0.25em;
+}
+
+/* Heading followed immediately by its paragraph: kill the generic gap so the
+   pair reads as one unit. */
+.mdx h2 + *,
+.mdx h3 + * {
+  margin-top: 0.5em;
+}
+
+.mdx ul,
+.mdx ol {
+  padding-left: 1.5rem;
+}
+
+.mdx ul {
+  list-style: disc;
+}
+
+.mdx ol {
+  list-style: decimal;
+}
+
+.mdx li + li {
+  margin-top: 0.55rem;
+}
+
+.mdx li {
+  padding-left: 0.15rem;
+}
+
+.mdx li::marker {
+  color: var(--accent-text);
+}
+
+.mdx a {
+  text-decoration: underline;
+}
+
+.mdx strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.mdx blockquote {
+  border-left: var(--rule-brass) solid var(--accent);
+  padding-left: 1.15rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.mdx code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.875em;
+  background: var(--surface-sunken);
+  padding: 0.1em 0.35em;
+  border: 1px solid var(--border);
+}
+
+.mdx table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  font-family: var(--font-instrument-sans), system-ui, sans-serif;
+}
+
+.mdx th,
+.mdx td {
+  text-align: left;
+  padding: 0.7rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.mdx th {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: transparent;
+  border-bottom: 2px solid var(--text);
+  font-weight: 500;
+}
+
+/* Wide content must scroll inside its own box, never the page body. */
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Heading anchor links added by rehype-autolink-headings. */
+.mdx .heading-anchor {
+  color: var(--accent-text);
+  opacity: 0;
+  margin-left: 0.4rem;
+  text-decoration: none;
+  transition: opacity var(--dur-fast) var(--ease-standard);
+}
+
+.mdx h2:hover .heading-anchor,
+.mdx h3:hover .heading-anchor,
+.mdx .heading-anchor:focus-visible {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Motion — restrained craft.
+   Every animation here is additive: the page is complete and readable with
+   all of it switched off.
+   ========================================================================== */
+
+/* The seal draws itself, once, on load. */
+@keyframes seal-draw {
+  from {
+    stroke-dashoffset: var(--seal-len, 1000);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.seal-draw {
+  stroke-dasharray: var(--seal-len, 1000);
+  animation: seal-draw var(--dur-draw) var(--ease-standard) both;
+}
+
+@keyframes rule-extend {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fade-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll-driven reveals are progressively enhanced.
+
+   The `both` fill would strand elements at opacity 0 in a browser that parses
+   the animation but has no view() timeline, so the whole block is gated behind
+   @supports. Unsupported browsers get the fully-visible static page, which is
+   the correct fallback for a civic site. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: fade-rise var(--dur-slow) var(--ease-standard) both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+
+    .rule-reveal {
+      animation: rule-extend var(--dur-slow) var(--ease-standard) both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 60%;
+    }
+  }
+}
+
+} /* end @layer components */
+
+/* ==========================================================================
+   Accessibility preferences — gentler equivalents, not "nothing"
+   Deliberately UNLAYERED: these must beat every utility, always.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    /* Scroll-driven animations ignore animation-duration entirely — their
+       progress is bound to scroll position, not to time. Detaching the
+       timeline is the only thing that actually stops them. */
+    animation-timeline: none !important;
+  }
+
+  .pressable:active {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .chrome-blur {
+    background: var(--bg);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --border: var(--paper-500);
+    --border-strong: var(--navy-700);
+    --text-muted: var(--navy-700);
+  }
+
+  :root[data-theme="dark"] {
+    --border: var(--navy-400);
+    --border-strong: var(--navy-300);
+    --text-muted: var(--navy-100);
+  }
+
+  .chrome-blur {
+    background: var(--bg);
+    backdrop-filter: none;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .broadsheet {
+    display: block;
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "$comment": "Section-level map of A.M. No. 24-10-14-SC, read directly from the promulgated text (scanned PDF in the project root, 42pp; the Rules body runs PDF pp.6-32). 'verbatim' is quoted from the Rules. 'gloss' is OUR plain-language Taglish rendering and is NOT the Rules. Every legal claim on this site must point at an id here.",
+  "source": {
+    "citation": "A.M. No. 24-10-14-SC, Rules on Electronic Notarization",
+    "promulgated": "2025-02-04",
+    "published": "2025-03-09",
+    "effective": "2025-03-24",
+    "effectivityBasis": "Rule XII, Sec. 9 — 15 days after complete publication",
+    "pdf": "https://sc.judiciary.gov.ph/wp-content/uploads/2025/03/A.M.-No.-24-10-14-SC-Feb.-4-2025-published-3.9.25.pdf"
+  },
+  "citations": [
+    {
+      "id": "scope",
+      "rule": "I",
+      "section": "2",
+      "title": "Scope and Purpose",
+      "verbatim": "The Rules shall govern the electronic notarization of electronic documents through In-Person Electronic Notarization and Remote Electronic Notarization. Notarization of paper documents and instruments with handwritten signature or marks shall continue to be governed by the 2004 Rules on Notarial Practice.",
+      "gloss": "Dalawa lang ang mode: IEN at REN. Kung papel at naka-ballpen ang pirma, 2004 Rules pa rin ang masusunod."
+    },
+    {
+      "id": "suppletory",
+      "rule": "I",
+      "section": "3",
+      "title": "Suppletory Application of the 2004 Rules",
+      "verbatim": "In the absence of any applicable provision in the Rules, the pertinent provisions of the 2004 Rules on Notarial Practice may be applied by analogy or in a suppletory manner.",
+      "gloss": "Kapag walang sagot ang bagong Rules, ang 2004 Rules ang babalikan."
+    },
+    {
+      "id": "competent-id",
+      "rule": "I",
+      "section": "4(b)",
+      "title": "Competent Evidence of Identity",
+      "verbatim": "at least one valid identification document (ID) issued by an official government agency bearing the photograph and signature of an individual, such as but not limited to the following: passport, driver's license, Professional Regulation Commission ID, National Bureau of Investigation clearance, police clearance, Philippine Postal Corporation Postal ID, voter's ID, voter's certification, Government Service Insurance System e-card, Social Security System card, Philippine Health Insurance Corporation card, senior citizen ID or booklet, Overseas Workers Welfare Administration ID, Overseas Filipino Worker ID, seaman's book, alien certificate of registration/immigrant certificate of registration, government office ID, certification from the National Council for the Welfare of Disabled Persons, Persons with Disability ID or booklet, Department of Social Welfare and Development certification, Solo Parent ID, Tax Identification Number ID, Unified Multi-Purpose ID card, and residency ID from a local government unit",
+      "gloss": "Dapat may litrato AT pirma. Mas mahaba ang listahan kaysa sa inaakala ng marami — kasama ang NBI clearance, police clearance, voter's certification, TIN ID at Solo Parent ID. Kasama rin ang PhilID (RA 11055) at ang IBP ID."
+    },
+    {
+      "id": "electronic-document",
+      "rule": "I",
+      "section": "4(d)",
+      "title": "Electronic Document",
+      "verbatim": "Scanned copies of paper documents fall under the definition of electronic document and are covered by the Rules. For purposes of the Rules, \"electronic document\" shall refer to documents in Portable Document Format (PDF) or Portable Document Format Archival (PDF/A).",
+      "gloss": "PDF o PDF/A. Pwede ang scan ng papel — electronic document na rin iyon."
+    },
+    {
+      "id": "seal-contents",
+      "rule": "I",
+      "section": "4(h)",
+      "title": "Electronic Notarial Seal",
+      "verbatim": "the name of the ENP; the roll number of the ENP; the words \"Republic of the Philippines\"; and the words \"Electronic Notary Public.\" The Electronic Notarial Seal shall also include a bar code, a quick response (QR) code, or any other similar seal in electronic format approved by the Supreme Court, which shall allow access to the foregoing information.",
+      "gloss": "Apat na bagay ang dapat nasa seal, kasama ang \"Republic of the Philippines\" — madalas itong nakakalimutan sa mga paliwanag online. May QR o bar code din."
+    },
+    {
+      "id": "ekyc",
+      "rule": "I",
+      "section": "4(e)",
+      "title": "Electronic Know-Your-Customer (e-KYC)",
+      "verbatim": "refers to the process of electronically verifying the credentials of a user following the issuances of the Bangko Sentral ng Pilipinas (BSP).",
+      "gloss": "May depinisyon pala ito sa Rules mismo, at nakatali sa mga issuance ng Bangko Sentral."
+    },
+    {
+      "id": "mfa",
+      "rule": "I",
+      "section": "4(q)",
+      "title": "Multi-Factor Authentication",
+      "verbatim": "validating and verifying the identity and authorization of users through the use of at least two of the following factors: (i) knowledge — something the user knows, e.g., username, password, mobile personal identification number (PIN), and account number; (ii) possession — something the user has, e.g., payment card, token, One-Time Password (OTP); and (iii) inherence — something the user is, e.g., biometrics.",
+      "gloss": "Dalawa sa tatlo: alam mo, hawak mo, o ikaw mismo."
+    },
+    {
+      "id": "videoconf-is-enf",
+      "rule": "I",
+      "section": "4(v)",
+      "title": "Videoconferencing Facility",
+      "verbatim": "Under the Rules, videoconferencing technology is understood to be an integrated support facility or feature of the ENF.",
+      "gloss": "Hindi ito basta Zoom o Messenger. Ang video call ay bahagi mismo ng accredited na ENF."
+    },
+    {
+      "id": "legal-effect",
+      "rule": "I",
+      "section": "5",
+      "title": "Legal Effect and Enforceability",
+      "verbatim": "Any notarial act performed in accordance with the Rules shall have the same validity, force, and effect and may be relied upon to the same extent as any other notarial act performed under the 2004 Notarial Rules, provided, however, that the Rules shall not apply to the execution of notarial wills, deposition taking, and paper documents and instruments with wet signatures or marks.",
+      "gloss": "Pareho ang bigat nito sa traditional. Pero hindi ito para sa notarial wills, deposition taking, at papel na may wet signature."
+    },
+    {
+      "id": "ien-appearance",
+      "rule": "II",
+      "section": "1",
+      "title": "Physical Appearance (IEN)",
+      "verbatim": "Physical appearance is when the principal, witnesses, and the ENP are in close proximity with each other to see, hear, and communicate without reliance on electronic devices such as telephones, cellular phones, computers, or video cameras.",
+      "gloss": "Sa IEN, magkaharap talaga kayo — walang gadget na namamagitan."
+    },
+    {
+      "id": "ren-appearance",
+      "rule": "III",
+      "section": "1",
+      "title": "Virtual Appearance (REN)",
+      "verbatim": "The videoconference must allow for synchronous interaction between and among the principal, the witnesses, if any, and the ENP, who may be in different locations. All electronic notarial sessions may be recorded. Pre-recorded videos of the principal and witnesses signing are strictly prohibited. Further, the ENP shall require the principal and the witnesses to stay within the view of the videoconference camera throughout the notarization process.",
+      "gloss": "Live dapat ang lahat. Bawal ang pre-recorded. Dapat nasa loob ka ng camera frame buong session."
+    },
+    {
+      "id": "ren-geolocation",
+      "rule": "III",
+      "section": "2(c)",
+      "title": "Geolocation check before REN",
+      "verbatim": "Except in the case of limited extraterritorial notarization under Rule IV, Section 5, the ENP shall ascertain that all parties are present in the Philippines by accessing the geolocation function of the ENF and by requiring all parties to disclose their actual physical location in the Philippines while remotely participating in the electronic notarization act.",
+      "gloss": "Bago mag-REN, kino-check ng ENP kung nasa Pilipinas ka nga — sa pamamagitan ng geolocation at ng tanong sa iyo mismo."
+    },
+    {
+      "id": "preliminaries",
+      "rule": "III",
+      "section": "2",
+      "title": "Preliminaries before the electronic notarial act",
+      "verbatim": "The ENP shall verify the identity of the principal and the witnesses through the identity verification mechanism of the ENF; Except in the case of limited extraterritorial notarization under Rule IV, Section 5, the ENP shall ascertain that all parties are present in the Philippines by accessing the geolocation function of the ENF and by requiring all parties to disclose their actual physical location in the Philippines; The ENP shall confirm the voluntariness of the principal and witnesses, if any, by examining their demeanor and immediate surroundings; The ENP shall read, interpret, and explain the general nature of the electronic document; and The ENP shall confirm that the electronic document to be notarized is the same one acknowledged, sworn to, affirmed by, or signed by the principal and the witnesses, if any.",
+      "gloss": "May gagawin ang e-notary bago pa ang akto mismo. Kasama ang pagpapaliwanag sa general nature ng dokumento sa iyo, at ang pagtingin sa demeanor mo AT sa paligid mo — kung may nagtatago sa labas ng frame. Halos pareho ang listahan sa IEN (Rule II, Sec. 2)."
+    },
+    {
+      "id": "acknowledgment",
+      "rule": "IV",
+      "section": "1(b)",
+      "title": "Acknowledgment by Electronic Means (pre-signed)",
+      "verbatim": "In case of a pre-signed electronic document, the ENP shall require the principal to confirm that the signature appearing on the electronic document is theirs and that it has been voluntarily affixed for the purposes stated therein; require the principal to declare that they signed the electronic document as their free and voluntary act and deed.",
+      "gloss": "Sa acknowledgment, OK lang kung naka-pirma na ang dokumento."
+    },
+    {
+      "id": "own-account",
+      "rule": "IV",
+      "section": "1",
+      "title": "Respective ENF accounts",
+      "verbatim": "In case of REN and where there is more than one principal, each of them shall appear virtually before the ENP and shall be present during the videoconference using their respective ENF accounts. Likewise, witnesses may appear virtually before the ENP and sign the electronic document, if needed, using their respective ENF accounts.",
+      "gloss": "Bawat isa, sariling account. Walang sharing — kahit mag-asawa pa kayo."
+    },
+    {
+      "id": "oath-presigned",
+      "rule": "IV",
+      "section": "2(b)",
+      "title": "Affirmation or Oath (pre-signed)",
+      "verbatim": "In case of a pre-signed electronic document, the ENP shall require the principal to confirm that the signature appearing on the electronic document is theirs; and require the principal to avow the truthfulness of the contents of the electronic document under penalty of law.",
+      "gloss": "Pati ang oath, pwedeng naka-pirma na. Jurat lang ang hindi pwede."
+    },
+    {
+      "id": "jurat",
+      "rule": "IV",
+      "section": "3",
+      "title": "Jurat by Electronic Means",
+      "verbatim": "In case of a jurat, the ENP shall require the principal to sign the electronic document by affixing their electronic signature using the ENF in full view of the ENP; and require the principal to take an oath before the ENP.",
+      "gloss": "Sa jurat, doon ka mismo pipirma sa harap ng ENP. Kaya huwag munang pirmahan bago ang session."
+    },
+    {
+      "id": "signature-witnessing",
+      "rule": "IV",
+      "section": "4",
+      "title": "Signature Witnessing by Electronic Means",
+      "verbatim": "In cases of signature witnessing, the ENP shall require the principal to electronically sign the electronic document using the ENF in their full view.",
+      "gloss": "Ikaapat na notarial act. Pumipirma ka sa harap mismo ng ENP, pero walang panunumpa. Hindi rin ito pwedeng pre-signed."
+    },
+    {
+      "id": "extraterritorial",
+      "rule": "IV",
+      "section": "5",
+      "title": "Limited Extraterritorial Performance of Electronic Notarial Acts",
+      "verbatim": "The ENP shall be allowed to perform any of the electronic notarial acts in the preceding Rule for a principal located outside the Philippines, provided that at the time of the performance of the electronic notarial act, the principal is within the premises of any of the embassies of the Philippines, Philippine consular offices, or offices of Philippine Honorary Consuls abroad. The ENP shall confirm the location of the principal abroad by requiring them to pan the video and show that they are within the premises of any Philippine embassies or consular offices. A designated officer from the Philippine embassy or consulate shall also confirm the principal's presence within the premises to the ENP before proceeding with the performance of the electronic notarial act.",
+      "gloss": "Ito ang tanging exception para sa nasa abroad: nasa loob ka mismo ng embahada, konsulado, o tanggapan ng Honorary Consul; magpa-pan ka ng camera; at may opisyal doon na magko-confirm na nandoon ka."
+    },
+    {
+      "id": "recording-right",
+      "rule": "IV",
+      "section": "8",
+      "title": "Audiovisual Recording of the Electronic Notarial Act",
+      "verbatim": "The principal(s) may create and retain an audiovisual recording of the electronic notarial act taken from the ENF for their account and records. For this purpose, the ENF shall allow the recording and downloading of the electronic notarial act for the benefit of the principal(s).",
+      "gloss": "Karapatan mo ang recording. Obligado ang ENF na payagan kang mag-record at mag-download."
+    },
+    {
+      "id": "enp-directory",
+      "rule": "V",
+      "section": "3",
+      "title": "Directory of ENPs",
+      "verbatim": "A copy of the directory of ENPs shall be posted on the Supreme Court website for the reference of the general public. The ENA shall ensure that this copy shall be updated on the 15th day of February and August each year.",
+      "gloss": "May obligasyon ang Korte Suprema na i-post ang listahan ng mga ENP — at i-update ito tuwing Pebrero 15 at Agosto 15."
+    },
+    {
+      "id": "enp-eligibility",
+      "rule": "VI",
+      "section": "1",
+      "title": "Commissioning of an ENP",
+      "verbatim": "must be a member of the Philippine Bar in good standing with clearances from the Office of the Bar Confidant (OBC) of the Supreme Court and the IBP; must be compliant with the Mandatory Continuing Legal Education (MCLE) and Unified Legal Aid Service (ULAS) requirements; must be a resident in the Philippines for at least one year and maintains a regular place of work or business anywhere in the Philippines; and must not have been convicted by final judgment of any crime involving moral turpitude.",
+      "gloss": "Apat na kwalipikasyon. Pansinin: walang nakasaad na kailangan mo munang maging traditional notary."
+    },
+    {
+      "id": "application-contents",
+      "rule": "VI",
+      "section": "2",
+      "title": "Application for Electronic Notarial Commission",
+      "verbatim": "Every application for an electronic notarial commission shall be in electronic form and shall include the following information and supporting documents: a statement containing the applicant's personal qualifications, including the applicant's citizenship, date of birth, residential address, address of regular place of work or business, telephone and/or mobile number, professional tax receipt number, Roll of Attorneys number, IBP membership number, MCLE compliance number, ULAS compliance number, and email address; an electronic or scanned copy of the certification of good moral character of the applicant from the OBC and the IBP; an unretouched passport-size colored photograph with light background taken within 30 days prior to the filing of the application; proof of payment for the filing of the application as required by the Rules; a written undertaking confirming that the applicant shall execute electronic notarial acts strictly in accordance with the Rules; a written undertaking confirming that the applicant shall comply with the Electronic Notarization Data Sharing Guidelines; and a certification issued by an ENF Provider stating that the applicant has viewed the on-demand instructional video on using the ENF.",
+      "gloss": "Pito ang laman ng application. Kasama ang good moral character certification mula sa OBC AT sa IBP, litratong kuha sa loob ng 30 araw, at sertipiko mula sa ENF Provider na napanood mo ang instructional video nila."
+    },
+    {
+      "id": "summary-hearing",
+      "rule": "VI",
+      "section": "3",
+      "title": "Virtual Summary Hearing",
+      "verbatim": "The ENA shall conduct a summary hearing on the application and shall grant the same if the application is sufficient in form and substance; the applicant proves the allegations contained in the application; the applicant establishes, to the satisfaction of the ENA, that they have read and fully understood the Rules and that they shall execute electronic notarial acts strictly in accordance therewith; and the applicant demonstrates, to the satisfaction of the ENA, that they have the basic technological aptitude or proficiency to use an ENF and its features. The summary hearing shall be conducted through videoconferencing following the guidelines in A.M. No. 20-12-01-SC.",
+      "gloss": "May aktwal na hearing, sa videoconference. Hindi sapat ang papeles — kailangan mong ipakita na kaya mong gamitin ang ENF."
+    },
+    {
+      "id": "opposition",
+      "rule": "VI",
+      "section": "5",
+      "title": "Opposition to the Application",
+      "verbatim": "Any person who has any cause or reason to object to the grant of the application may electronically file a verified written opposition thereto before the date of the summary hearing. The opposition must be filed through the ENA's dedicated email address. The ENA shall forward a copy of the opposition to the applicant's email address. The ENA shall also give the oppositor the link and access to the virtual summary hearing.",
+      "gloss": "Bukas sa publiko ang pagtutol. Ipo-post ang notice sa website ng Korte Suprema (Rule VI, Sec. 4), at sinuman ay pwedeng mag-file ng verified opposition."
+    },
+    {
+      "id": "application-fee",
+      "rule": "VI",
+      "section": "7",
+      "title": "Application Fee",
+      "verbatim": "Every applicant shall pay the fee prescribed by the Supreme Court.",
+      "gloss": "WALANG halaga na nakasulat sa Rules. Anumang piso na binabanggit online ay galing sa hiwalay na SC issuance o sa application portal — hindi sa Rules mismo."
+    },
+    {
+      "id": "jurisdiction",
+      "rule": "VI",
+      "section": "9",
+      "title": "Jurisdiction of ENPs",
+      "verbatim": "Once commissioned in accordance with the procedure set forth herein, the ENP shall be authorized to perform electronic notarial acts for principals located anywhere in the Philippines. The ENP shall also be authorized to perform electronic notarial acts for principals located outside the Philippines provided that the ENP is in the Philippines and the conditions under Section 5, Rule IV are met. If the ENP is also commissioned under the 2004 Notarial Rules, they may conduct traditional in-person notarization of paper documents and instruments but only in accordance with said rules.",
+      "gloss": "Nationwide na ang saklaw — wala nang limitasyon sa lungsod o probinsya. Ito ang pinakamalaking pagbabago para sa taga-probinsya."
+    },
+    {
+      "id": "term",
+      "rule": "VI",
+      "section": "10",
+      "title": "Term",
+      "verbatim": "The electronic notarial commission shall be valid for a period of two years commencing from the first day of January of the year in which the commissioning was made, unless earlier revoked or the ENP has resigned under the Rules and Rule 139 of the Rules of Court.",
+      "gloss": "Dalawang taon mula Enero 1 ng taong na-commission ka. Kahit Disyembre ka pa na-approve, isang buong taon pa rin ang bilang ng natitirang buwan."
+    },
+    {
+      "id": "renewal",
+      "rule": "VI",
+      "section": "11",
+      "title": "Renewal of Commission",
+      "verbatim": "An ENP may submit an application for renewal of their electronic notarial commission to the ENA within 30 days prior to the expiration thereof. Failure to submit said application will result in the automatic removal of the name of the ENP in the directory of ENPs and denial of access to the ENF(s) on the day immediately succeeding the expiration date of the applicant's commission. The ENP thus removed from the directory of ENPs may only be reinstated after the issuance of a new electronic notarial commission obtained through a new application therefor in accordance with the Rules.",
+      "gloss": "30 araw bago mag-expire. Kapag nalampasan: tanggal agad sa directory, at wala nang access sa ENF kinabukasan. At walang late renewal — bagong aplikasyon na ang kailangan."
+    },
+    {
+      "id": "enf-accreditation-required",
+      "rule": "VII",
+      "section": "1",
+      "title": "Accreditation of ENF",
+      "verbatim": "To ensure the integrity of the technologies used in the performance of electronic notarial acts and for the protection of the interests of the public, the ENP may only use Supreme Court-accredited ENF in the performance of electronic notarial acts.",
+      "gloss": "Accredited ENF lang ang pwedeng gamitin. Walang exception."
+    },
+    {
+      "id": "enf-features",
+      "rule": "VII",
+      "section": "2",
+      "title": "General Features of the ENF",
+      "verbatim": "possesses e-KYC mechanisms that are consistent with the pertinent issuances of the BSP; possesses liveness detection, anti-spoofing technology, or such other technology capable of detecting a presentation attack and of determining whether the person virtually appearing before the ENP through the ENF is a live person and not a spoof; allows the parties, in the performance of REN, to communicate with each other simultaneously by sight and sound through videoconference with a minimum resolution of 1280 x 720 pixels (HD) and informs all users that the minimum required internet speed for electronic notarization is 2 mbps per user; possesses geolocation functionality and is capable of identifying and disabling the use of VPNs or other technology calculated to alter the actual location of the users in the performance of REN; prevents the ENP from using the ENF to perform electronic notarial acts outside the Philippines except limited extraterritorial performance thereof under Section 5, Rule IV; allows the principal(s) to create and download the audiovisual recordings of the performance of REN; allows the creation and maintenance of an Electronic Notarial Book, which shall be automatically populated in chronological order, properly referenced, and indexed by the ENF upon completion of an electronic notarial act; facilitates digital payments and issuance of electronic official receipts for the performance of electronic notarial acts; possesses a system or mechanism for verifying or validating whether an electronically notarized document is authentic or is otherwise tampered with; restricts access of ENPs with expired, canceled, or revoked commissions and access of principals and witnesses with expired or invalid competent evidence of identity; maintains a back-up of all Electronic Notarial Books in a separate database, which must be updated in real time; guarantees 99.9% uptime except for maintenance operations",
+      "gloss": "Mahaba ang listahan ng Rule VII, Sec. 2; ito ang mga tumatama sa iyo. Dito galing ang 1280x720 at 2 mbps. Obligado rin ang ENF na mag-e-KYC at liveness detection, i-disable ang VPN, pigilan ang ENP na mag-notaryo habang nasa labas ng bansa, harangin ang expired na ID, kusang punuin ang notarial book, at magbigay ng paraan para ma-verify kung tampered ang dokumento."
+    },
+    {
+      "id": "transitional-report",
+      "rule": "VIII",
+      "section": "3",
+      "title": "Reportorial Requirement During the Transitional Period",
+      "verbatim": "During the Transitional Period, the ENP shall forward to the ENA, through its dedicated email address, a certified electronic copy of the Electronic Notarial Book with the month's entries and copies of the corresponding notarized electronic documents within the first 10 days of the month immediately following. If there is no entry to certify for the month, the ENP shall forward a statement to this effect in lieu of certified copies herein required.",
+      "gloss": "Habang wala pa ang Central Notarial Database, buwanang report sa ENA — unang 10 araw ng kasunod na buwan."
+    },
+    {
+      "id": "book-inspection",
+      "rule": "VIII",
+      "section": "5",
+      "title": "Inspection, Copying, and Disposal",
+      "verbatim": "Any person may physically or virtually inspect or request to reproduce an entry in the Electronic Notarial Book during regular business hours, provided as follows: The identity of the requesting party is proven through competent evidence of identity; The requesting party affixes their electronic signature in the Electronic Notarial Book in a separate and dated entry; The requesting party specifies the month, year, type of electronic document, and name of the principal(s) and/or the witnesses for the electronic notarial act(s) sought; The requesting party shall disclose the purpose for the request for inspection, copying, or disposal; and Only the entry specified by the requesting party shall be shown. The Electronic Notarial Book shall be examined by a law enforcement officer in connection with an official investigation and only by virtue of a court order. If the ENP has a reasonable ground to believe that the requesting party has a criminal intent or wrongful motive in requesting information from the Electronic Notarial Book, the ENP may deny access to any entry.",
+      "gloss": "Lima ang kondisyon: may ID ka; pipirma ka sa hiwalay at may-petsang entry; tutukuyin mo ang buwan, taon, uri ng dokumento at pangalan ng principal o saksi; sasabihin mo ang layunin; at ang hiningi mo lang na entry ang ipapakita. Pwede kang tanggihan ng ENP kung may makatwirang dahilan siyang isipin na masama ang motibo mo."
+    },
+    {
+      "id": "book-loss-72h",
+      "rule": "VIII",
+      "section": "6(a)",
+      "title": "Loss, Destruction, or Damage of Electronic Notarial Book",
+      "verbatim": "In case the Electronic Notarial Book is lost, destroyed, damaged, altered, or otherwise rendered unusable or illegible as a record of electronic notarial acts, the ENP shall, within 72 hours upon knowledge thereof, inform the NPC, such other appropriate law enforcement agency, the ENA, and the principal(s), witness(es) participating in the electronic notarial act, or data subjects of such incident.",
+      "gloss": "72 oras — pero ito ay para sa nawala o nasirang Notarial Book, hindi basta-basta anumang data breach."
+    },
+    {
+      "id": "seal-format",
+      "rule": "IX",
+      "section": "1(b)",
+      "title": "Form of the Electronic Notarial Seal",
+      "verbatim": "The Electronic Notarial Seal, as defined under Section 4, Rule I of the Rules, which shall use the font style \"Times New Roman\" and font size 12 and measure 1.5 inches by 3 inches",
+      "gloss": "Parihaba pala ang seal — 1.5 x 3 pulgada, Times New Roman 12. Hindi ito bilog na stamp na nakasanayan natin."
+    },
+    {
+      "id": "certificate-contents",
+      "rule": "X",
+      "section": "2",
+      "title": "Contents of the Concluding Part of the Electronic Notarial Certificate",
+      "verbatim": "The Electronic Notarial Certificate shall include the following: the ENP's name exactly as stated on the notarial commission issued in accordance with Section 6, Rule VI of the Rules; the ENP's Roll of Attorneys number; the words \"Electronic Notary Public\"; the word \"Philippines\"; the commission number of the ENP; the validity of the term of the ENP's commission; the ENP's professional tax receipt number and the place and its date of issuance; the ENP's IBP membership number; the ENP's email address; the address of the ENP's regular place of work or business; the ENP's compliance with the MCLE and ULAS requirements, including the date of its compliance; and the mode of electronic notarization, i.e., IEN or REN.",
+      "gloss": "Labindalawang bagay. Kasama ang commission number, ang taning ng commission, at — mahalaga ito — kung IEN o REN ang ginawa. Wala ang tatlong ito sa seal."
+    },
+    {
+      "id": "revocation",
+      "rule": "XI",
+      "section": "3(a)",
+      "title": "Revocation and Administrative Sanctions",
+      "verbatim": "failure to make proper entries in the Electronic Notarial Book concerning the performance of electronic notarial acts; failure to require the physical or virtual presence of a principal and/or any witness at the time of the performance of the notarial act, depending on whether IEN or REN was adopted as modality; execution of a false or incomplete Electronic Notarial Certificate; performance of an electronic notarial act (a) when the ENP is not geolocated/situated within the Philippines, or Philippine embassy, consular office, or office of Philippine Honorary Consul abroad; or (b) when the ENP has good reason to believe that the transaction is unlawful or immoral",
+      "gloss": "Kabilang sa dahilan ng revocation: hindi pagpapa-appear ng principal, maling entry sa notarial book, at pag-notaryo habang nasa labas ng bansa."
+    },
+    {
+      "id": "enp-fees",
+      "rule": "XII",
+      "section": "1",
+      "title": "Fees of ENP",
+      "verbatim": "The fees charged for electronic notarial services shall be in accordance with any guide on notarial fees as may be issued by the Supreme Court unless the ENP waives the fee in whole or in part. The ENP may charge reasonable or proportionate telecommunication and other incidental expenses incurred in addition to the notarial fees prescribed under such guide.",
+      "gloss": "Ang bayad ay ayon sa guide ng Korte Suprema. Pwedeng i-waive nang buo o bahagi. Pwede ring singilin ang makatwirang telecom at iba pang incidental na gastos."
+    },
+    {
+      "id": "retention",
+      "rule": "XII",
+      "section": "2",
+      "title": "Storage and Retention",
+      "verbatim": "The ENP shall store and retain the contents of the Electronic Notarial Book and copies of the notarized document for the duration of their commission or for a longer period as may be directed by a court of competent jurisdiction. These records shall be managed in accordance with law and stored in secure servers, cloud or on-premise, with firewall, encryption, and other technical security measures as may be approved by the Supreme Court.",
+      "gloss": "Habang may commission, itatago ang records — sa secure na server, may encryption."
+    },
+    {
+      "id": "punishable-acts",
+      "rule": "XII",
+      "section": "3",
+      "title": "Punishable Acts",
+      "verbatim": "The ENA shall cause the prosecution or the filing of administrative action against any person who knowingly acts or otherwise impersonates an ENP; knowingly falsifies, obtains, conceals, defaces, or destroys the Electronic Notarial Seal, Electronic Notarial Book, or official records of an ENP; knowingly tampers with, alters, or otherwise circumvents the effective technological measures placed by the ENP or the ENF to secure the Electronic Notarial Seal, the Electronic Notarial Book, or the notarized electronic document; knowingly solicits, coerces, influences, or in any way misleads an ENP to commit official misconduct; uses programs and extensions, such as VPN, to change the actual location of a party to the notarial act at the time of notarization; and provides an ENF without a valid and subsisting Certificate of Accreditation.",
+      "gloss": "Anim na parusahang gawain — kasama ang paggamit ng VPN para pekein ang lokasyon, at pagpapatakbo ng ENF na walang accreditation. Hindi lang notaryo ang pwedeng makasuhan; sinuman."
+    },
+    {
+      "id": "dual-commission",
+      "rule": "XII",
+      "section": "5",
+      "title": "Simultaneous Application",
+      "verbatim": "In view of the separation of regimes provided under Section 2, Rule I of the Rules, qualified persons can simultaneously perform electronic and traditional notarization, provided they have distinct and separate commissions for both.",
+      "gloss": "Pwedeng pareho — basta hiwalay at magkaibang commission ang hawak."
+    },
+    {
+      "id": "repeal",
+      "rule": "XII",
+      "section": "6",
+      "title": "Repealing Clause",
+      "verbatim": "A.M. No. 20-07-04-SC or the 2020 Interim Rules on Remote Notarization of Paper Documents is hereby repealed.",
+      "gloss": "Wala na ang pandemic-era na interim rules."
+    },
+    {
+      "id": "media-confidentiality",
+      "rule": "XII",
+      "section": "7",
+      "title": "Confidentiality Clause",
+      "verbatim": "The ENP shall keep confidential the terms and contents of documents electronically notarized before them, and a disclosure of the terms of any documents to other persons shall not be permitted except as compelled by competent courts or to individuals who shall request for a certified true copy thereof in accordance with the Rules. In no event will the ENP or their heirs, assigns, or representatives make or cause to be made any comment, written statement, or press release to any member of the media concerning the substance or terms of any document notarized before them.",
+      "gloss": "Hindi lang media. Obligado ang ENP na ilihim ang laman ng dokumento mo sa lahat — maliban kung inutos ng korte o may humihingi ng certified true copy ayon sa Rules."
+    },
+    {
+      "id": "effectivity",
+      "rule": "XII",
+      "section": "9",
+      "title": "Effectivity",
+      "verbatim": "The Rules shall take effect within 15 days following its complete publication in the Official Gazette or in two newspapers of general circulation in the Philippines. It shall also be uploaded to the website of the Supreme Court.",
+      "gloss": "Inilathala noong 9 Marso 2025, kaya naging epektibo noong 24 Marso 2025."
+    }
+  ],
+  "openQuestions": [
+    {
+      "question": "What is the ENP application fee?",
+      "status": "unverified",
+      "checked": "2026-08-06",
+      "finding": "Rule VI, Sec. 7 names no amount. No Supreme Court issuance stating a figure could be sourced. The PHP 3,000 previously on this site had no traceable origin and has been removed. PHP 5,000 belongs to the ENF provider, not the individual lawyer."
+    },
+    {
+      "question": "ENF provider accreditation fee and bond",
+      "status": "verified",
+      "checked": "2026-08-07",
+      "finding": "₱5,000 application fee via JePS (Guidelines III, Sec. 3); ₱100,000 cash performance bond with the SC Cashier in an LBP fiduciary account within 5 days of Notice of Approval, certificate withheld until posted (III, Sec. 4); 3-year validity or until revoked (III, Sec. 5); ₱5,000 renewal fee filed 30 days before expiry (III, Sec. 6); one month's notice to enrolled ENPs on exit (III, Sec. 7). Verified against the Guidelines text at PDF pp.39-40 (Guidelines Rule III, Secs. 2-7)."
+    },
+    {
+      "question": "Is the SC fee guide under Rule XII, Sec. 1 published?",
+      "status": "no",
+      "checked": "2026-08-06",
+      "finding": "Not found. Third-party fee tables claiming to be 'Supreme Court-approved schedules' are unsupported."
+    }
+  ],
+  "guidelinesSource": {
+    "citation": "Guidelines on the Accreditation of Electronic Notarization Facility Providers (companion to A.M. No. 24-10-14-SC)",
+    "provenance": "Read directly from the promulgated text. The Guidelines are attached to the same En Banc Resolution as the Rules and occupy pp.34-42 of the scanned PDF in the project root (Guidelines printed pp.1-9). Section numbers below are verified against that text. They remain a separate document from the Rules, so we cite them as Guidelines, never as Rules.",
+    "checked": "2026-08-07"
+  },
+  "guidelines": [
+    {
+      "id": "g-apply",
+      "section": "III, Sec. 2",
+      "title": "Application",
+      "finding": "The provider applies for accreditation to the Supreme Court through the ENA."
+    },
+    {
+      "id": "g-fee",
+      "section": "III, Sec. 3",
+      "title": "Application fee",
+      "finding": "₱5,000, paid through the Judiciary e-Payment Solution (JePS)."
+    },
+    {
+      "id": "g-bond",
+      "section": "III, Sec. 4",
+      "title": "Performance bond",
+      "finding": "₱100,000 in cash, deposited with the Supreme Court Cashier under a fiduciary account with Land Bank of the Philippines, within 5 days of the Notice of Approval. The Certificate of Accreditation is withheld until the bond is posted."
+    },
+    {
+      "id": "g-validity",
+      "section": "III, Sec. 5",
+      "title": "Validity",
+      "finding": "Accreditation runs 3 years from the date of approval of the application, or until revoked."
+    },
+    {
+      "id": "g-renewal",
+      "section": "III, Sec. 6",
+      "title": "Renewal",
+      "finding": "Same qualifications are re-verified. Filed within 30 days prior to expiry, with a ₱5,000 renewal fee."
+    },
+    {
+      "id": "g-exit",
+      "section": "III, Sec. 7",
+      "title": "Pre-termination or non-renewal",
+      "finding": "The provider must give one month's advance notice to all enrolled ENPs and assist with migration."
+    }
+  ]
+}
